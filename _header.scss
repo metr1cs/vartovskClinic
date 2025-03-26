@@ -1,0 +1,122 @@
+.header{
+    background-color: rgb(255,255,255);
+    // background-position: calc(100% + 490px); 
+    background-position: 141px 2px;
+    background-image: url(./image/headerdnk.png);
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 123px;
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    &__navigate{
+        display: flex;
+        gap: 74px;
+        padding-left: 135px;
+        padding-top: 58px;
+    }
+    &__logo{
+        padding-top: 39px;
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: left;
+        text-decoration: none;
+        color: rgb(114, 114, 114);
+    }
+    &__timeWork{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 18px;
+        padding-left: 172px;
+    }
+    &__text{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &__phone{
+        box-sizing: border-box;
+        border: 0px solid rgb(32, 32, 39);
+        border-radius: 30px;
+        background: rgb(117, 203, 75);
+        padding: 13px 22px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+    }
+    &__forms{
+        display: flex;
+        flex-direction: row;
+    }
+    &__left{
+        width: 600px;
+        padding-top: 220px;
+        padding-left: 60px;
+        width: 550px;
+        
+        
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        
+    }
+    &__information{
+        width: 500px;
+        padding-top: 12px;
+    }
+    &__button{
+        margin-left: 174px;
+        margin-top: 22px;
+        box-sizing: border-box;
+        border: 0px solid rgb(32, 32, 39);
+        border-radius: 30px;
+        background: rgb(117, 203, 75);
+        padding: 13px 16px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 17px;
+        text-align: left;
+        
+    }
+    &__right{
+        padding-top: 77px;
+        margin-left: 107px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__baner_big{
+        background-image: url(./image/баннер1.jpeg);
+        background-repeat: no-repeat;
+        width: 620px;
+        height: 306px;
+        
+    }
+    &__baner-1{
+        background-image: url(./image/баннер\ дмс.png);
+        background-repeat: no-repeat;
+        width: 305px;
+        height: 234px;
+        
+    }
+    &__baner-2{
+        background-image:url(./image/баннер\ узи.jpeg);
+        background-repeat: no-repeat;
+        width: 305px;
+        height: 234px;
+    }
+   
+}

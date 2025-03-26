@@ -1,0 +1,16 @@
+@import 'header','content','direction';
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+a{
+    text-decoration: none;
+}
+  
+.center{
+    padding-left: calc(50% - 642px);
+    padding-right: calc(50% - 642px);
+}
