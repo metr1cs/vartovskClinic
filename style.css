@@ -122,7 +122,8 @@
   padding-left: 28px;
 }
 .content__directions {
-  background-color: rgba(220, 220, 220, 0.74);
+  background-image: url(./image/Subtract\ \(1\).png);
+  background-repeat: no-repeat;
   border-radius: 30px;
   margin-left: 28px;
   margin-top: 34px;
@@ -130,8 +131,10 @@
 .content__information {
   background-color: rgb(117, 203, 75);
   border-radius: 20px;
-  width: 462px;
-  padding: 48px;
+  width: 400px;
+  padding: 24px;
+  margin-left: 34px;
+  margin-top: 53px;
 }
 .content__discription {
   color: rgba(255, 255, 255, 0.95);
@@ -171,14 +174,12 @@
   align-items: center;
 }
 .direction__form {
-  padding-top: 52px;
-  padding-bottom: 68px;
-  padding-left: 58px;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 48px;
-       column-gap: 48px;
-  row-gap: 109px;
+  flex-direction: row;
+  gap: 48px;
+  padding-left: 58px;
+  padding-top: 38px;
 }
 .direction__image {
   padding-top: 30px;
@@ -199,6 +200,22 @@
   font-weight: 300;
   line-height: 17px;
   text-align: center;
+}
+.direction__form-horisontal {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.direction__form-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 117px;
+}
+
+.horisontal-horisotn {
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
 }
 
 * {
