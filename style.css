@@ -136,13 +136,6 @@
   margin-left: 34px;
   margin-top: 53px;
 }
-.content__discription {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-  text-align: left;
-}
 .content__text {
   color: rgba(255, 255, 255, 0.95);
   font-size: 14px;
@@ -165,10 +158,10 @@
 
 .direction {
   margin-top: 20px;
-  height: 194px;
-  width: 189px;
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
+  height: 184px;
+  gap: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,6 +209,163 @@
   display: flex;
   flex-direction: row;
   gap: 58px;
+}
+
+.lor {
+  grid-column-start: 1; /* начинается с 1-й линии колонки */
+  grid-column-end: 2; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.mrt {
+  grid-column-start: 2; /* начинается с 1-й линии колонки */
+  grid-column-end: 3; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Gastroenterologist {
+  grid-column-start: 3; /* начинается с 1-й линии колонки */
+  grid-column-end: 4; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Therapist {
+  grid-column-start: 4; /* начинается с 1-й линии колонки */
+  grid-column-end: 5; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Surgeon {
+  grid-column-start: 5; /* начинается с 1-й линии колонки */
+  grid-column-end: 6; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Gynecologist {
+  grid-column-start: 1; /* начинается с 1-й линии колонки */
+  grid-column-end: 1; /* заканчивается на 2-й линии */
+  grid-row-start: 2; /* начинается с 3-й линии строки */
+  grid-row-end: 2; /* заканчивается на 4-й линии */
+}
+
+.Urologist {
+  grid-column-start: 2; /* начинается с 1-й линии колонки */
+  grid-column-end: 2; /* заканчивается на 2-й линии */
+  grid-row-start: 2; /* начинается с 3-й линии строки */
+  grid-row-end: 2; /* заканчивается на 4-й линии */
+}
+
+.Phlebologist {
+  grid-column-start: 3; /* начинается с 1-й линии колонки */
+  grid-column-end: 3; /* заканчивается на 2-й линии */
+  grid-row-start: 2; /* начинается с 3-й линии строки */
+  grid-row-end: 2; /* заканчивается на 4-й линии */
+}
+
+.lor {
+  grid-column-start: 1; /* начинается с 1-й линии колонки */
+  grid-column-end: 2; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.mrt {
+  grid-column-start: 2; /* начинается с 1-й линии колонки */
+  grid-column-end: 3; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Gastroenterologist {
+  grid-column-start: 3; /* начинается с 1-й линии колонки */
+  grid-column-end: 4; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Therapist {
+  grid-column-start: 4; /* начинается с 1-й линии колонки */
+  grid-column-end: 5; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Surgeon {
+  grid-column-start: 5; /* начинается с 1-й линии колонки */
+  grid-column-end: 6; /* заканчивается на 2-й линии */
+  grid-row-start: 1; /* начинается с 3-й линии строки */
+  grid-row-end: 1; /* заканчивается на 4-й линии */
+}
+
+.Gynecologist {
+  grid-column-start: 1; /* начинается с 1-й линии колонки */
+  grid-column-end: 1; /* заканчивается на 2-й линии */
+  grid-row-start: 2; /* начинается с 3-й линии строки */
+  grid-row-end: 2; /* заканчивается на 4-й линии */
+}
+
+.Urologist {
+  grid-column-start: 2; /* начинается с 1-й линии колонки */
+  grid-column-end: 2; /* заканчивается на 2-й линии */
+  grid-row-start: 2; /* начинается с 3-й линии строки */
+  grid-row-end: 2; /* заканчивается на 4-й линии */
+}
+
+.Phlebologist {
+  grid-column-start: 3; /* начинается с 1-й линии колонки */
+  grid-column-end: 3; /* заканчивается на 2-й линии */
+  grid-row-start: 2; /* начинается с 3-й линии строки */
+  grid-row-end: 2; /* заканчивается на 4-й линии */
+}
+
+.specialists__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  padding-top: 150px;
+}
+.specialists__navigate {
+  display: flex;
+  gap: 22px;
+  margin-top: 39px;
+}
+.specialists__text {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 30px;
+  width: 137px;
+  padding: 16px 15px;
+  color: rgb(63, 63, 63);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.specialists__text:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.all {
+  width: 291px;
+}
+.all:hover {
+  background-color: rgb(117, 219, 71);
+}
+
+.gerasim {
+  background-color: rgba(220, 220, 220, 0.74);
+  display: flex;
+}
+.gerasim__photo {
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: 0 0;
 }
 
 * {

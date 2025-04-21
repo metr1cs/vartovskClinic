@@ -1,0 +1,52 @@
+.specialists{
+    &__title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        padding-top: 150px;
+    }
+    &__navigate{
+        display: flex;
+        gap: 22px;
+        margin-top: 39px;
+
+    }
+    &__link{
+
+    }
+    &__text{
+        
+        border: 1px solid rgb(232, 232, 232);
+        border-radius: 30px;
+        width: 137px;
+        padding: 16px 15px;
+        color: rgb(63, 63, 63);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover{
+            background-color: rgb(232, 232, 232);
+        }
+    }
+    
+   
+}
+.all{
+    width: 291px;
+    &:hover{
+        background-color:rgb(117, 219, 71);
+    }
+}
+
+.gerasim{
+    background-color: rgba(220, 220, 220, 0.74);
+    display: flex;
+    &__photo{
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+        background-position: 0 0;
+    }
+}
