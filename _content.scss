@@ -13,7 +13,6 @@
         border-radius: 30px;
         margin-left: 28px;
         margin-top: 34px;
-        
     }
     &__information{
         background-color: rgb(117, 203, 75);
@@ -21,6 +20,13 @@
         padding: 40px;
         margin-top: 5px;
         
+    }
+    &__discription{
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: left;
     }
     &__text{
         color: rgba(255, 255, 255, 0.95);
