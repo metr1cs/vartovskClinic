@@ -1,10 +1,11 @@
-@import 'header','content','direction';
+@import 'header','content','direction','specialists','aboutindex';
 *{
     margin: 0;
     padding: 0;
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
   }
 a{
     text-decoration: none;
