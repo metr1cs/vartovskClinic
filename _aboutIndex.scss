@@ -66,6 +66,17 @@
         letter-spacing: 0%;
         text-align: left;
     }
+    &__textR{
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 20px;
+        width: 450px;
+    }
     &__text{
         color: rgba(0, 0, 0, 0.5);
         font-family: Montserrat;
@@ -75,7 +86,6 @@
         letter-spacing: 0%;
         text-align: left;
         margin-top: 20px;
-       
     }
 
 
@@ -110,7 +120,6 @@
     &__right{
         background-image: url(./image/backsubstract-right.png);
         background-repeat: no-repeat;
-        background-size: cover;
         padding: 28px 36px 53px 36px;
         height: 327px;
         
@@ -118,6 +127,6 @@
     &__rightTop{
         display: flex;
         flex-direction: row;
-        gap: 180px;
+        gap: 74px;
     }
 }
