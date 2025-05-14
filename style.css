@@ -414,7 +414,7 @@
 .specialization__singUp {
   border-radius: 30px;
   background: rgb(117, 203, 75);
-  padding: 16px 19px 16px 19px;
+  padding: 16px 35px;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 14px;
@@ -423,11 +423,12 @@
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+  text-align: center;
 }
 .specialization__details {
   border-radius: 30px;
   background: rgba(239, 239, 239, 0.78);
-  padding: 16px 19px 16px 19px;
+  padding: 16px 35px;
   color: rgb(99, 99, 99);
   font-family: Montserrat;
   font-size: 14px;
@@ -436,11 +437,12 @@
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+  text-align: center;
 }
 .specialization__botton {
-  margin-top: 40px;
+  margin-top: 33px;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 .specialistName {
@@ -481,8 +483,8 @@
 .about {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
-  gap: 116px;
+  margin-top: 170px;
+  gap: 139px;
 }
 .about__text {
   width: 782px;
@@ -493,6 +495,19 @@
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+}
+
+.aboutClinc {
+  color: rgb(63, 63, 63);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 27px;
+  width: 300px;
 }
 
 .reviews {

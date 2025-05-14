@@ -61,7 +61,7 @@
     
         border-radius: 30px;
         background: rgb(117, 203, 75);
-        padding: 16px 19px 16px 19px;
+        padding: 16px 35px;
         color: rgb(255, 255, 255);
         font-family: Montserrat;
         font-size: 14px;
@@ -70,11 +70,12 @@
         letter-spacing: 0%;
         text-align: left;
         text-transform: uppercase;
+        text-align: center;
     }
     &__details{
         border-radius: 30px;
         background: rgba(239, 239, 239, 0.78);
-        padding: 16px 19px 16px 19px;
+        padding: 16px 35px;
         color: rgb(99, 99, 99);
         font-family: Montserrat;
         font-size: 14px;
@@ -83,11 +84,13 @@
         letter-spacing: 0%;
         text-align: left;
         text-transform: uppercase;
+        text-align: center;
     }
     &__botton{
-        margin-top: 40px;
+        margin-top: 33px;
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
+        gap: 40px;
     }
 }
 .specialistName{

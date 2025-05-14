@@ -1,8 +1,8 @@
 .about{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-    gap: 116px;
+    margin-top: 170px;
+    gap: 139px;
     &__text{
         width: 782px;
         color: rgb(63, 63, 63);
@@ -12,8 +12,21 @@
         line-height: 20px;
         letter-spacing: 0%;
         text-align: left;
+       
     }
 }
+.aboutClinc{
+            color: rgb(63, 63, 63);
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+            margin-left: 27px;
+            width: 300px;
+        }
 .reviews{
     margin-top: 110px;
     display: flex;
