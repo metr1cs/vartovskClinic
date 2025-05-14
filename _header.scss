@@ -10,7 +10,7 @@
     &__menu{
         display: flex;
         flex-direction: row;
-       
+       margin-top: 29px;
     }
     &__navigate{
         display: flex;
@@ -67,9 +67,9 @@
         
     }
     &__title{
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
+        font-weight: 600;
+        font-size: 39px;
+        line-height: 47px;
         
     }
     &__information{
