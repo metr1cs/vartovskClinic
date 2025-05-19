@@ -1,0 +1,14 @@
+.aboutContent{
+    &__left{
+        display: flex;
+        flex-direction: row;
+    }
+    &__title{
+        width: 600px;
+    }
+    &_shotoSlide{
+        background-color: bisque;
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -622,6 +622,19 @@
   gap: 74px;
 }
 
+.aboutContent__left {
+  display: flex;
+  flex-direction: row;
+}
+.aboutContent__title {
+  width: 600px;
+}
+.aboutContent_shotoSlide {
+  background-color: bisque;
+  width: 300px;
+  height: 300px;
+}
+
 .footer {
   background: rgb(220, 220, 220);
   height: 368px;
