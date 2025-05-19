@@ -625,14 +625,16 @@
 .aboutContent__left {
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
-.aboutContent__title {
-  width: 600px;
-}
-.aboutContent_shotoSlide {
-  background-color: bisque;
-  width: 300px;
-  height: 300px;
+.aboutContent__text {
+  color: rgb(63, 63, 63);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .footer {
