@@ -622,7 +622,22 @@
   gap: 74px;
 }
 
+.aboutContent__form {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
 .aboutContent__left {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.aboutContent__center {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.aboutContent__bottom {
   display: flex;
   flex-direction: row;
   gap: 40px;
