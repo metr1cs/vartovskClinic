@@ -1,7 +1,7 @@
 .tab {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   gap: 27px;
 
   &-btn {
@@ -11,6 +11,36 @@
     background: transparent; // ← Делаем фон прозрачным
     color: inherit; // Наследует цвет текста от родителя
     cursor: pointer; // Добавляем курсор-указатель
+  }
+  &-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 27px;
+  }
+  &-search{
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 30px;
+  }
+  &-pane{
+ background: url(./image/backgroundService.svg);
+  background-size: contain; /* Впишется в контейнер с сохранением пропорций */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%; /* или фиксированные размеры */
+  height: 713px; /* обязательная высота */
+  }
+  &__form{
+        padding-top: 40px;
+        display: flex;
+        gap: 52px;
+        row-gap: 110px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
   }
 }
 
