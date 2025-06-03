@@ -26,6 +26,18 @@
         </div>
      </header>
 
+    <div class="tab" id="tab-1">
+        <div class="tab-nav">
+            <button type="button" class="tab-btn tab-btn-active" data-target-id="0">все услуги</button>
+            <button type="button" class="tab-btn" data-target-id="1">анализы</button>
+            <button type="button" class="tab-btn" data-target-id="2">дневной стационар</button>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane tab-pane-show" data-id="0">Содержимое 1...</div>
+            <div class="tab-pane" data-id="1">Содержимое 2...</div>
+            <div class="tab-pane" data-id="2">Содержимое 3...</div>
+        </div>
+    </div>
 
 <footer class="footer center">
     <img class="footer__logo center" src="./image/logo2.svg" alt="">
@@ -70,5 +82,7 @@
         </div>
     </div>
 </footer>
+    <script src="./tabService.js"></script>
 </body>
+
 </html>
