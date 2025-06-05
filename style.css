@@ -1,10 +1,5 @@
 @charset "UTF-8";
 .header {
-  background-color: rgb(255, 255, 255);
-  background-position: 141px 2px;
-  background-image: url(./image/headerdnk.png);
-  background-repeat: no-repeat;
-  position: relative;
   padding-bottom: 123px;
 }
 .header__menu {
@@ -459,7 +454,7 @@
 .specialist__form {
   display: flex;
   flex-direction: row;
-  gap: 56px;
+  gap: 10px;
   margin-left: 28px;
 }
 
@@ -478,6 +473,44 @@
   text-transform: uppercase;
   margin-top: 128px;
   margin-left: 28px;
+}
+
+.specialist__container {
+  width: 100%;
+  overflow-x: auto; /* Включаем горизонтальную прокрутку */
+  padding-bottom: 20px; /* Чтобы не обрезать тени/эффекты при прокрутке */
+  -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на мобильных */
+}
+
+.specialist__form {
+  display: flex; /* Располагаем карточки в ряд */
+  gap: 10px; /* Отступ между карточками */
+  padding: 10px 0; /* Небольшие отступы сверху и снизу */
+  width: -moz-max-content;
+  width: max-content; /* Ширина по содержимому */
+}
+
+.specialistCart {
+  flex: 0 0 auto; /* Запрещаем карточкам сжиматься/растягиваться */
+}
+
+/* Стили для скроллбара (опционально) */
+.specialist__container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.specialist__container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.specialist__container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.specialist__container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .about {
@@ -697,7 +730,6 @@
 .tab {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 27px;
 }
 .tab-btn {
@@ -707,6 +739,36 @@
   background: transparent;
   color: inherit;
   cursor: pointer;
+}
+.tab-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+}
+.tab-search {
+  padding: 5px 15px;
+  font-size: 16px;
+  border: 2px solid rgb(182, 182, 182);
+  border-radius: 30px;
+}
+.tab-pane {
+  background: url(./image/backgroundService.svg);
+  background-size: contain; /* Впишется в контейнер с сохранением пропорций */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%; /* или фиксированные размеры */
+  height: 713px; /* обязательная высота */
+}
+.tab__form {
+  padding-top: 40px;
+  display: flex;
+  gap: 52px;
+  row-gap: 110px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab-btn-active {
@@ -728,6 +790,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
+  background-position: 141px 2px;
+  background-image: url(./image/headerdnk.png);
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 a {
