@@ -454,7 +454,7 @@
 .specialist__form {
   display: flex;
   flex-direction: row;
-  gap: 56px;
+  gap: 10px;
   margin-left: 28px;
 }
 
@@ -473,6 +473,44 @@
   text-transform: uppercase;
   margin-top: 128px;
   margin-left: 28px;
+}
+
+.specialist__container {
+  width: 100%;
+  overflow-x: auto; /* Включаем горизонтальную прокрутку */
+  padding-bottom: 20px; /* Чтобы не обрезать тени/эффекты при прокрутке */
+  -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на мобильных */
+}
+
+.specialist__form {
+  display: flex; /* Располагаем карточки в ряд */
+  gap: 10px; /* Отступ между карточками */
+  padding: 10px 0; /* Небольшие отступы сверху и снизу */
+  width: -moz-max-content;
+  width: max-content; /* Ширина по содержимому */
+}
+
+.specialistCart {
+  flex: 0 0 auto; /* Запрещаем карточкам сжиматься/растягиваться */
+}
+
+/* Стили для скроллбара (опционально) */
+.specialist__container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.specialist__container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.specialist__container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.specialist__container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .about {
