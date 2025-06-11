@@ -103,12 +103,12 @@
     letter-spacing: 0px;
     text-align: left;
 }
-.specialist__form{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-left: 28px;
-}
+// .specialist__form{
+//     display: flex;
+//     flex-direction: row;
+//     gap: 10px;
+//     margin-left: 28px;
+// }
 .specialitInformation{
     padding: 0 30px 30px 30px;
 }
@@ -135,7 +135,7 @@ margin-left: 28px;
 .specialist__form {
     display: flex; /* Располагаем карточки в ряд */
     gap: 10px; /* Отступ между карточками */
-    padding: 10px 0; /* Небольшие отступы сверху и снизу */
+    padding: 40px 0; /* Небольшие отступы сверху и снизу */
     width: max-content; /* Ширина по содержимому */
 }
 
