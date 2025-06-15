@@ -8,6 +8,9 @@
     position: relative;  /* Родитель для абсолютного позиционирования */
     padding-top: 100px;  /* Место для фото (подбери значение под высоту фото) */
     margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .questionnaire__photo {
     position: absolute;
@@ -37,6 +40,13 @@
         flex-direction: column;
         gap: 22px;
         padding: 9px 21px;
+        color: rgba(63, 63, 63, 0.95);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
     }
    
     &__title{
@@ -111,6 +121,11 @@
 // }
 .specialitInformation{
     padding: 0 30px 30px 30px;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
 }
 .specialist__titles{
         color: rgb(63, 63, 63);

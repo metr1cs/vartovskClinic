@@ -355,6 +355,9 @@
   position: relative; /* Родитель для абсолютного позиционирования */
   padding-top: 100px; /* Место для фото (подбери значение под высоту фото) */
   margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .questionnaire__photo {
@@ -387,6 +390,13 @@
   flex-direction: column;
   gap: 22px;
   padding: 9px 21px;
+  color: rgba(63, 63, 63, 0.95);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 .specialization__title {
   color: rgb(63, 63, 63);
@@ -453,6 +463,11 @@
 
 .specialitInformation {
   padding: 0 30px 30px 30px;
+  height: 367px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
 }
 
 .specialist__titles {
@@ -546,7 +561,8 @@
   border-radius: 30px;
   background: rgba(220, 220, 220, 0.74);
   width: 364px;
-  padding: 28px 27px 35px 36px;
+  padding: 28px 27px 40px 36px;
+  height: 291px;
 }
 .reviews-link {
   border-radius: 30px;
@@ -720,6 +736,16 @@
   align-items: center;
 }
 
+.licenzion-text {
+  color: rgb(63, 63, 63);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
 .tab__sing {
   width: 375px;
   height: 43px;
@@ -866,10 +892,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   background-position: 141px 2px;
   background-image: url(./image/headerdnk.png);
