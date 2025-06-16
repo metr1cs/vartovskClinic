@@ -12,6 +12,8 @@
   gap: 74px;
   padding-left: 135px;
   padding-top: 58px;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .header__logo {
   padding-top: 39px;
@@ -23,6 +25,16 @@
   text-align: left;
   text-decoration: none;
   color: rgb(114, 114, 114);
+  width: 55px;
+}
+.header__linkAbout {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(114, 114, 114);
+  width: 100px;
 }
 .header__timeWork {
   display: flex;
@@ -48,6 +60,7 @@
   font-size: 14px;
   line-height: 17px;
   align-items: center;
+  width: 170px;
 }
 .header__forms {
   display: flex;
@@ -560,9 +573,9 @@
 .reviews__left {
   border-radius: 30px;
   background: rgba(220, 220, 220, 0.74);
-  width: 364px;
-  padding: 28px 27px 40px 36px;
-  height: 291px;
+  /* width: 364px; */
+  padding: 28px 27px 35px 36px;
+  height: 292px;
 }
 .reviews-link {
   border-radius: 30px;
@@ -655,8 +668,8 @@
 .reviews__right {
   background-image: url(./image/backsubstract-right.png);
   background-repeat: no-repeat;
-  padding: 28px 36px 53px 36px;
-  height: 327px;
+  padding: 28px 36px 6px 36px;
+  height: 320px;
 }
 .reviews__rightTop {
   display: flex;
@@ -761,8 +774,6 @@
   text-align: left;
   text-transform: uppercase;
   text-align: center;
-  margin-left: 535px;
-  margin-top: 80px;
 }
 
 .search-container {
@@ -867,6 +878,11 @@
   position: relative;
   width: 100%; /* или фиксированные размеры */
   height: 713px; /* обязательная высота */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .tab__form {
   padding-top: 40px;

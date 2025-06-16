@@ -14,6 +14,8 @@
         gap: 74px;
         padding-left: 135px;
         padding-top: 58px;
+        align-items: center;
+        flex-wrap: nowrap;
     }
     &__logo{
         padding-top: 39px;
@@ -25,6 +27,16 @@
         text-align: left;
         text-decoration: none;
         color: rgb(114, 114, 114);
+        width: 55px;
+    }
+     &__linkAbout{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: left;
+        text-decoration: none;
+        color: rgb(114, 114, 114);
+        width: 100px;
     }
     &__timeWork{
         display: flex;
@@ -50,6 +62,7 @@
         font-size: 14px;
         line-height: 17px;
         align-items: center;
+        width: 170px;
     }
     &__forms{
         display: flex;
