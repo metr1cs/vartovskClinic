@@ -905,6 +905,11 @@
   display: none;
 }
 
+.basicTests {
+  width: 600px;
+  margin-top: 200px;
+}
+
 * {
   margin: 0;
   padding: 0;
