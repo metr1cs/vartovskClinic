@@ -1,617 +1,955 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Клиника №1</title>
+    <link rel="shortcut icon" href="./image/logo2.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header class="header center">
-        <div class="header__menu">
-            <img class="header__logo" src="./image/logo2.svg" alt="клинника №1">
-            <div class="header__navigate">
-                <a class="#" href="./aboutClinic.html"><h1 class="header__linkAbout">о клинике</h1></a>
-                <a class="#" href="./service.html"><h2 class="header__link">услуги</h2></a>
-                <a class="#" href="#"><h2 class="header__link">цены</h2></a>
-                <a class="#" href="#"><h2 class="header__link">врачи</h2></a>
-                <a class="#" href="#"><h2 class="header__link">контакты</h2></a>
-                
-            </div>
-            <div class="header__timeWork">
-                <p class="header__text">пн-вс 8:00-20:00</p>
-                <h4 class="header__phone">8 (3466) 406-603</h4>
-            </div>
-        </div>
-        <div class="header__forms">
-            <div class="header__left">
-                <h1 class="header__title">МЕДИЦИНСКИЙ ЦЕНТР В НИЖНЕВАРТОВСКЕ</h1>
-                    <p class="header__information">Принимаем по полисам ДМС СОГАЗ, Альфа-страхование, Уралсиб, Евро-Полис, Росгосстрах, Ренессанс, Класс-Ассист, Югория</p>
-                    <button class="header__button">онлайн запись</button>
-            </div>
-            <div class="header__right">
-                <div class="header__baner_big"></div>
-                <div class="header__baner-1"></div>
-                <div class="header__baner-2"></div>  
-            </div>
-        </div>
-    </header>
-    <div class="content center">
-        <h1 class="content__title">НАПРАВЛЕНИЯ</h1>
-        <div class="content__directions">
-            <div class="direction__form">
-                <div class="form__module-culumn">
-                    <article class="direction lor">
-                        <img class="direction__image" src="./image/Ear.png" alt="">
-                        <h3 class="direction__title">ЛОР</h3>
-                        <p class="direction__text">Лечение заболеваний ЛОР-органов</p>
-                    </article>
-                    <article class="direction mrt">
-                        <img class="direction__image" src="./image/Brain.png" alt="">
-                        <h3 class="direction__title">МРТ</h3>
-                        <p class="direction__text">Исследование внутр. органов и тканей</p>
-                    </article>
-                </div>    
-                <div class="form__module-culumn">
-                    <article class="direction Gastroenterologist">
-                        <img class="direction__image" src="./image/Hand With a Pill.png" alt="">
-                        <h3 class="direction__title">ГАСТРОЭНТЕРОЛОГ</h3>
-                        <p class="direction__text">Лечение и диагностика органов ЖКТ</p>
-                    </article>
-                    <article class="direction therapist">
-                        <img class="direction__image" src="./image/Card.png" alt="">
-                        <h3 class="direction__title">Терапевт</h3>
-                        <p class="direction__text">Общая терапия без очередей</p>
-                    </article>
-                </div>
-                <div class="form__module-culumn">
-                    <article class="direction Surgeon">
-                        <img class="direction__image" src="./image/Syringe.png" alt="">
-                        <h3 class="direction__title">Хирург</h3>
-                        <p class="direction__text">Пункции, инъекции, наложение швов</p>
-                    </article>
-                    <article class="direction Gynecologist">
-                        <img class="direction__image" src="./image/Female.png" alt="">
-                        <h3 class="direction__title">Гинеколог</h3>
-                        <p class="direction__text">Лечение заболеваний ЛОР-органов</p>
-                    </article>
-                </div>
-                <div class="form__module-culumn">
-                <div class="form__module-rows">
-                    <article class="direction Urologist">
-                        <img class="direction__image" src="./image/Group 11.png" alt="">
-                        <h3 class="direction__title">Уролог</h3>
-                        <p class="direction__text">Урология и андрология, профилактика и лечение</p>
-                    </article>
-                    <article class="direction Phlebologist">
-                        <img class="direction__image" src="./image/Female.png" alt="">
-                        <h3 class="direction__title">Флеболог</h3>
-                        <p class="direction__text">Сосуды кровеносно-лимфатических систем</p>
-                    </article>
-                </div>
-                <div class="content__information">
-                    <h1 class="content__discription">Клиника №1 -<br> как Единая система</h1>
-                    <p class="content__text">Наша клиника создана по принципу единой системы, обеспечивающей профилактику, диагностику и лечение различных заболеваний, что позволяет решать большинство проблем, связанных со здоровьем, в пределах одного медицинского учреждения.</p>
-                    <a href=""><p class="content__link">смотреть все направления</p></a>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div> 
-    
 
-    <section class="specialist center">
-        <h1 class="specialist__titles">СПЕЦИАЛИСТЫ</h1>
-        <div class="specialist__container">
-            <div class="specialist__form">
-                <!-- Карточки специалистов -->
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/grymeetA.jpeg" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Груммет Алексей Андреевич</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Колопроктолог, хирург</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Диагностика и лечение заболеваний прямой кишки</li>
-                                    <li>Лазерные операции по проктологии</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- ЗАЯВКА -->
+    <section class="application">
+        <div class="application-center">
+            <form class="form" action="#">
+                <div class="form-top">
+                    <h1 class="form-top__title">Заказать обратный звонок</h1>
+                    <p class="form-top__text">Заполните форму и наш администратор свяжется с вами для записи в ближайшее
+                        время</p>
                 </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/ahmedshin.jpeg" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Ахметшин Дим Альфирович</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Онколог, хирург</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Удаление бородавок, папиллом, родинок, новообразований</li>
-                                    <li>Биопсия молочной, щитовидной железы под УЗ контролем</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="form-inputs">
+                    <input class="form-inputs__item" type="text" placeholder="Ваше имя">
+                    <input class="form-inputs__item" type="text" placeholder="+7 (999) 555-55-55">
+                    <input class="form-inputs__item" type="text" placeholder="Какой нужен врач/услуга">
+                    <button class="form-inputs__button">Отправить данные</button>
                 </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/kornilov.jpeg" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Корнилов Дмитрий Юрьевич</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Флеболог, хирург</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Удаление варикоза лазером </li>
-                                    <li>Удаление сосудистых звездочек</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="form-checkbox">
+                    <input class="form-checkbox__marker" type="checkbox" id="personal-data">
+                    <label class="form-checkbox__label" for="personal-data">Соглашаюсь на обработку персональных
+                        данных</label>
                 </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/ahmedshina.jpeg" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Ахметшина Гузель Мадисовна</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Эндокринолог</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Сахарный диабет</li>
-                                    <li>Нарушения работы щитовидной железы, надпочечников</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/batraeva.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Батраева Виктория Михайловна</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Колопроктолог, хирург</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Диагностика и лечение заболеваний прямой кишки</li>
-                                    <li>Лазерные операции по проктологии</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/gerasimenko.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Герасименко Владимир Леонидович</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Хирург, отоларинголог</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Заболевания УХО ГОРЛО НОС</li>
-                                    <li>Для взрослых и детей</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/jigulin.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Жигулин Владислав Игоревич</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Гастроэнтеролог, педиатр, Спортивная медицина</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Оформление медицинского заключения о опуске к спорту</li>
-                                    <li>Гастропрофилактика и лечение заболеваний ЖКТ</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/kashtalinchuk.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Кашталинчук Олеся Владимировка</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Неирохирург</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Заболевания центральной и периферической нервной системы</li>
-                                    <li>Для взрослых и детей</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/козюченко.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Козюченко Иван Степанович</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Невролог, иглорефлексотерапевт</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Остеохондроз, головные боли, мигрени</li>
-                                    <li>Снятие болевого синдрома при пяточной шпоре, висцеральный массаж, иглонож</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/рамазанов.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Рамазанов Руслан Амангельдыевич</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">отоларинголог</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Заболевание УХО ГОРЛО НОС</li>
-                                    <li>Для взрослых и детей</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/телков.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Телков Максим Викторович</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Функциональная диагностика</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>УЗДГ сосудов шеи и головы, верхних и нижних конечностей</li>
-                                    <li>Узи всех органов</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/тетюшев.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Тетюшев Иван Викторович</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Ортопед-травмотолог</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Дигностика и лечение заболеваний опорно-двигательного аппарата</li>
-                                    <li>Снятие болевого синдрома при пяточной шпоре, висцеральный массаж, иглонож</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/цымбал.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Цымбал Антон Викторович</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Уролог, хирург</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Болезни мочеполовой системы</li>
-                                    <li>Для взрослых и детей</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="specialistCart">
-                    <div class="questionnaire">
-                        <div class="questionnaire__photo">
-                            <img src="./circlePhoto/shevchenko.png" alt="Груммет Алексей Андреевич">
-                        </div>
-                        <div class="specialitInformation">
-                            <h3 class="specialistName">Шевченко Евгений Анатольевич</h3>
-                            <div class="specialitInformation__information">
-                                <div class="specialization">
-                                    <div>
-                                        <h4 class="specialization__title">Специализация</h4>
-                                        <span class="specialization__text">Невролог, иглорефлексотерапевт</span>
-                                    </div>
-                                    <div class="specialization__experience">
-                                        <h4>Опыт работы</h4>
-                                        <span>17 лет</span>
-                                    </div>
-                                </div>
-                                <ul class="specialization__description">
-                                    <li>Остеохондроз, головные боли, мигрени</li>
-                                    <li>Снятие болевого синдрома при пяточной шпоре, висцеральный массаж, иглонож</li>
-                                </ul>
-                                <div class="specialization__botton">
-                                    <a class="specialization__details" href="#">ПОДРОБНЕЕ</a>
-                                    <a class="specialization__singUp" href="#">ЗАПИСАТЬСЯ</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
+            </form>
+        </div>
+        <div class="complate">
+            <div class="complate-image">
+                <svg width="72.792969" height="54.621094" viewBox="0 0 72.793 54.6211" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Слияние"
+                        d="M31.1758 45.957L67.4609 1.11328C68.5039 -0.175781 70.3945 -0.375 71.6836 0.667969C72.9688 1.71094 73.168 3.59766 72.125 4.88672L32.7852 53.5078C31.9492 54.543 30.5703 54.875 29.3906 54.4258C28.9883 54.3242 28.6016 54.1367 28.2539 53.8594L1.125 32.0977C-0.167969 31.0625 -0.375 29.1719 0.660156 27.8828C1.69531 26.5898 3.58594 26.3828 4.87891 27.418L28.3711 46.2617C29.2305 46.9492 30.4844 46.8164 31.1758 45.957Z"
+                        clip-rule="evenodd" fill="#75DB47" fill-opacity="1.000000" fill-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="complate-box">
+                <h1 class="complate-box__title">Ваша заявка принята</h1>
+                <p class="complate-box__phrase">Спасибо! Скоро свяжемся с Вами!</p>
             </div>
         </div>
     </section>
-    </section>
-<div class="about center">
 
-    <h1 class="aboutClinc">О НАШЕЙ КЛИННИКЕ</h1>
-    <p class="about__text">Главная задача – обеспечить наших пациентов высококвалифицированной, быстрой и эффективной медицинской помощью с максимальным удобством для пациента, учитывая принципы врачебной этики. Наши специалисты осуществляют обслуживание на дому детей и взрослых. Средний, младший медицинский и остальной персонал нашей клиники доброжелателен и вежлив, имеет длительный стаж работы в профильных медицинских отделениях.</p>
-</div>
-<div class="reviews center">
-    <div class="reviews__left">
-        <h4 class="reviews-link">Диагностика</h4>
-        <div class="reviews__who">
-            <p class="reviews__name">Мариям</p>
-            <p class="reviews__date">10 марта 2025</p>
-        </div>
-        <p class="reviews__text">Здравствуйте. Была сегодня у вас в клинике. Спасибо огромное вашим специалистам. В этой клинике мед. сестра из регистратуры и врач своей поддержкой и настроем хорошим помогли мне выдержать эти сложные пол часа пока мне делали диагностику! В других клиниках не было такой поддержки и я всячески испытывала страх Желаю всему коллективу успехов в работе,спасибо большое что вы есть!</p>
-    </div>
-    <div class="reviews__centerForm">
-        <div class="reviews__center">
-            <h4 class="reviews-link">ОРТОПЕД</h4>
-            <div class="reviews__who">
-                <p class="reviews__name">Мариям</p>
-                <p class="reviews__date">10 марта 2025</p>
-            </div>
-            <p class="reviews__text">Доктор Шевченко профессионал своего дела. В другом месте назначили блокаду. В то время когда доктор Шевченко не увидел проблем с коленями, направил к флебологу и неврологу</p>
-        </div>
-            <a class="reviews__center-link" href="">ЧИТАТЬ ВСЕ ОТЗЫВЫ</a>
-            
-    </div>
-    <div class="reviews__rightForm">
-         <div class="reviews__right">
-            <div class="reviews__rightTop">
-            <h4 class="reviews-link">НЕВРАПАТОЛОГ</h4>
-            <h1 class="reviews-title">ОТЗЫВЫ</h1>
-        </div>
-            <div class="reviews__who">
-                <p class="reviews__name">Мариям</p>
-                <p class="reviews__date">10 марта 2025</p>
-            </div>
-            <p class="reviews__textR">Огромное спасибо и низкий поклон доктору Козюченко Ивану Степановичу! Моя супруга около 6 месяцев не вставала на ноги, вся ее жизнь проходила в горизонтальном положении. Не помогло лечение в окружной больнице. Привезли на носилках и через 24 дня лечения выписали на носилках. И только Иван Степанович поставил ее на ноги. После пятой процедуры иглорефлексотерапии супруга встала на ноги и смогла самостоятельно педвигать и жить полноценной жизнью. Спасибо Вам, Иван Степанович, за жену, маму, бабушку от всей нашей семьи!!!</p>
-         </div>       
-    </div>
-</div>
-<footer class="footer center">
-    <img class="footer__logo center" src="./image/logo2.svg" alt="">
-    <div class="footer__form center">
-        <div class="footer__left">
-                <div class="footer__menu">
-                    <a class="footer__menu-link" href="./aboutClinic.html"><h4 class="footer__menu-title">О КЛИНИКЕ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">УСЛУГИ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">ЦЕНЫ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">ВРАЧИ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">КОНТАКТЫ</h4></a>
+    <!-- HEADER -->
+    <section class="center">
+        <header class="header bufer">
+            <div class="navigate">
+                <input type="checkbox" name="header" id="nav">
+                <label class="navigate-button" for="nav">
+                    <svg class="svg-burger" viewBox="0 0 28 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <rect id="фрейм 22" width="25.000000" height="16.000000"
+                            transform="translate(1.500000 1.500000)" fill="#FFFFFF" fill-opacity="0" />
+                        <path id="Линия 2" d="M1.5 17.5L26.5 17.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                        <path id="Линия 2" d="M1.5 9.5L26.5 9.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                        <path id="Линия 2" d="M1.5 1.5L26.5 1.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                    </svg>
+                </label>
+                <div class="navigate-button__block navigate-button__block--nav" id="nav-block">
+                    <a class="navigate-button__block-link" href="/aboutClinic.html">о клинике</a>
+                    <a class="navigate-button__block-link" href="/service.html">услуги</a>
+                    <a class="navigate-button__block-link" href="/doctors.html">врачи</a>
+                    <a class="navigate-button__block-link" href="/contacts.html">контакты</a>
                 </div>
-        </div>
-        <div class="footer__center">
-            <div class="footer__center-form">
-                <img src="" alt="">
-                <p>mrt-nv1@mail.ru</p>
             </div>
-            <h4>ОНЛАЙН ЗАПИСЬ</h4>
-        </div>
-        <div class="footer__right">
-            <div class="footer__right-navigate">
-                <img src="" alt="">
-                <p>г.Нижневартовск,<br> ул.Северная,20а</p>
+            <a href="/index.html">
+                <img class="header-logo" src="./image/logo2.svg" alt="клинника №1" />
+                <img class="header-logo__textless" src="./image/logo2.png" alt="клинника №1" />
+            </a>
+            <nav class="header-navigate">
+                <a class="header-navigate__link" href="./aboutClinic.html">о клинике</a>
+                <a class="header-navigate__link" href="./service.html">услуги</a>
+                <a class="header-navigate__link" href="./doctors.html">врачи</a>
+                <a class="header-navigate__link" href="/contacts.html">контакты</a>
+            </nav>
+            <div class="header-timeWork">
+                <p class="header-timeWork__text">пн-вс 8:00-20:00</p>
+                <a href="tel:+73466406603" class="header-timeWork__phone">8 (3466) 406-603</a>
             </div>
-            <div class="footer__right-phone">
-                <img src="" alt="">
-                <p>9(900)3900-559</p>
+            <div class="navigate">
+                <input type="checkbox" name="header" id="phone">
+                <label class="navigate-button" for="phone">
+                    <svg class="svg-phone" viewBox="0 0 20.125 19.2578" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="path"
+                            d="M19.44 14.58L15.95 12.31C15.62 12.09 15.26 12 14.86 12.06C14.46 12.11 14.14 12.28 13.89 12.58L12.89 13.73C12.76 13.88 12.6 13.96 12.4 14C12.2 14.04 12.01 14.01 11.84 13.92C8.57 12.22 6.52 9.43 5.58 7.92C5.47 7.75 5.44 7.56 5.48 7.35C5.53 7.14 5.64 6.99 5.82 6.87L6.9 6.14C7.07 6.03 7.2 5.89 7.32 5.72C7.42 5.55 7.5 5.37 7.53 5.18C7.57 4.99 7.56 4.79 7.51 4.6C7.47 4.41 7.39 4.24 7.27 4.07L4.73 0.63C4.61 0.46 4.46 0.32 4.29 0.22C4.11 0.11 3.92 0.04 3.71 0.01C3.5 -0.02 3.3 -0.01 3.1 0.04C2.89 0.09 2.71 0.17 2.54 0.29L0.89 1.47C0.39 1.82 0.1 2.28 0.03 2.87C-0.49 7.52 4.44 12.34 4.62 12.52C9.52 18.28 13.98 19.25 16.41 19.25C16.78 19.25 17.14 19.23 17.51 19.17C18.25 19.07 18.79 18.71 19.12 18.06L19.96 16.47C20.13 16.14 20.17 15.79 20.07 15.43C19.97 15.07 19.76 14.79 19.44 14.58Z"
+                            fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </label>
+                <div class="navigate-button__block navigate-button__block--phone" id="phone-block">
+                    <p class="navigate-button__block-link navigate-button__block-link--low">пн-вс 8:00-20:00</p>
+                    <a class="navigate-button__block-link" href="tel:+79003900559">8 (900) 3900-559</a>
+                    <a class="navigate-button__block-link" href="tel:+73466406603">8 (3466) 406-603</a>
+                </div>
             </div>
-            <div class="footer__right-phone">
-                <img src="" alt="">
-                <p>9(3466)406-604</p>
+        </header>
+    </section>
+
+    <!-- КОНТЕНТ -->
+    <section class="center">
+        <section class="page-doctors bufer">
+
+            <!-- TOP -->
+            <section class="main">
+                <div class="main-left">
+                    <h1 class="main-left__title">МЕДИЦИНСКИЙ ЦЕНТР В НИЖНЕВАРТОВСКЕ</h1>
+                    <p class="main-left__information">
+                        Принимаем по полисам ДМС СОГАЗ, Альфа-страхование, Уралсиб,
+                        Евро-Полис, Росгосстрах, Ренессанс, Класс-Ассист, Югория
+                    </p>
+                    <button class="main-left__button">онлайн запись</button>
+                </div>
+
+                <div class="main-right">
+                    <article class="main-right__banner">
+                        <img class="main-right__banner-image main-right__banner-image--1" src="/image/banner1grad.png"
+                            alt="" />
+                        <div class="main-right__banner-container">
+                            <h2 class="main-right__banner-tittle">скидка на <br>первый приём</h2>
+                            <a class="main-right__banner-button salepage" href="/sale.html" data-details="sale">К
+                                акциям</a>
+                        </div>
+                    </article>
+                    <div class="main-right__bottom">
+                        <article class="main-right__bottom-box">
+                            <a class="main-right__banner-link salepage" href="/sale.html" data-details="dms"></a>
+                            <img class="main-right__banner-image main-right__banner-image--2"
+                                src="/image/bannergrad.png" alt="" />
+                            <div class="main-right__banner-container main-right__banner-container--mini">
+                                <h2 class="main-right__banner-tittle">дмс</h2>
+                                <p class="main-right__banner-description">
+                                    3 шага, чтобы получить <br>услугу нашего мед. центра
+                                    <span class="main-right__banner-description--span">бесплатно</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="main-right__bottom-box">
+                            <a class="main-right__banner-link podrobnee" href="/doctors.html" data-details="uzi"></a>
+                            <img class="main-right__banner-image main-right__banner-image--3"
+                                src="/image/bannergrad.png" alt="" />
+                            <div class="main-right__banner-container main-right__banner-container--mini">
+                                <h2 class="main-right__banner-tittle">узи</h2>
+                                <p class="main-right__banner-description">
+                                    Ультразвуковая система <br>экспертного класса <br>Samsung
+                                    Accuvix XG
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+
+
+
+                    <!-- <div class="main-right">
+                    <article class="main-right__banner main-right__banner--ban1">
+                        <img class="main-right__banner-image main-right__banner-image--1" src="/image/banner1grad.png"
+                            alt="" />
+                        <div class="main-right__banner-container">
+                            <h2 class="main-right__banner-tittle">скидка на <br>первый приём</h2>
+                            <a class="main-right__banner-button salepage" href="/sale.html" data-details="sale">К
+                                акциям</a>
+                        </div>
+                    </article>
+                    <article class="main-right__banner main-right__banner--ban2">
+                        <a class="main-right__banner-link salepage" href="/sale.html" data-details="dms"></a>
+                        <img class="main-right__banner-image main-right__banner-image--2" src="/image/bannergrad.png"
+                            alt="" />
+                        <h2 class="main-right__banner-tittle">дмс</h2>
+                        <p class="main-right__banner-description">
+                            3 шага, чтобы получить <br>услугу нашего мед. центра
+                            <span class="main-right__banner-description--span">бесплатно</span>
+                        </p>
+                    </article>
+                    <article class="main-right__banner main-right__banner--ban3">
+                        <a class="main-right__banner-link podrobnee" href="/doctors.html" data-details="uzi"></a>
+                        <img class="main-right__banner-image main-right__banner-image--3" src="/image/bannergrad.png"
+                            alt="" />
+                        <h2 class="main-right__banner-tittle">узи</h2>
+                        <p class="main-right__banner-description">
+                            Ультразвуковая система <br>экспертного класса <br>Samsung
+                            Accuvix XG
+                        </p>
+                    </article> -->
+                </div>
+            </section>
+
+            <!-- НАПРАВЛЕНИЯ -->
+            <div class="direction-box" data-tab="doctors">
+                <article class="direction" data-direction="lor">
+                    <img class="direction__image" src="./image/DIRECTIONS/ear.png" alt="">
+                    <h3 class="direction__title">Лор</h3>
+                    <p class="direction__text">Лечение заболеваний<br>ЛОР-органов</p>
+                    <div class="direction__back"></div>
+                </article>
+                <article class="direction" data-direction="mrt">
+                    <img class="direction__image" src="./image/DIRECTIONS/brain.png" alt="">
+                    <h3 class="direction__title">МРТ</h3>
+                    <p class="direction__text">Исследование внутр. органов и тканей</p>
+                    <div class="direction__back"></div>
+                </article>
+                <article class="direction" data-direction="gastroenterolog">
+                    <img class="direction__image" src="./image/DIRECTIONS/hand-pill.png" alt="">
+                    <h3 class="direction__title">Гастроэнтеролог</h3>
+                    <p class="direction__text">Лечение и диагностика<br>органов ЖКТ</p>
+                    <div class="direction__back"></div>
+                </article>
+                <article class="direction" data-direction="onkolog">
+                    <img class="direction__image" src="./image/DIRECTIONS/med-card.png" alt="">
+                    <h3 class="direction__title">Онколог</h3>
+                    <p class="direction__text">Опухоли: выявление, профилактика, лечение</p>
+                    <div class="direction__back"></div>
+                </article>
+                <article class="direction" data-direction="hirurg">
+                    <img class="direction__image" src="./image/DIRECTIONS/syringe.png" alt="">
+                    <h3 class="direction__title">Хирург</h3>
+                    <p class="direction__text">Пункции, инъекции, наложение швов</p>
+                    <div class="direction__back"></div>
+                </article>
+                <article class="direction" data-direction="pediatr">
+                    <img class="direction__image" src="./image/DIRECTIONS/doctor-childe.png" alt="">
+                    <h3 class="direction__title">Терапевт/Педиатр</h3>
+                    <p class="direction__text">Врач для детей и взрослых</p>
+                    <div class="direction__back"></div>
+                </article>
+                <article class="direction" data-direction="urolog">
+                    <img class="direction__image" src="./image/DIRECTIONS/male.png" alt="">
+                    <h3 class="direction__title">Уролог</h3>
+                    <p class="direction__text">Урология, андрология, профилактика и лечение</p>
+                    <div class="direction__back"></div>
+                </article>
+                <article class="direction" data-direction="flebolog">
+                    <img class="direction__image" src="./image/DIRECTIONS/torso.png" alt="">
+                    <h3 class="direction__title">Флеболог</h3>
+                    <p class="direction__text">Сосуды кровеносно-лимфатических систем</p>
+                    <div class="direction__back"></div>
+                </article>
+
+                <!-- ССЫЛКА НА ВСЕ -->
+                <a class="direction__link" href="/doctors.html">
+                    смотреть все
+                </a>
+
+                <!-- ДОБАВОЧНЫЙ ЭЛЕМЕНТ -->
+                <article class="last">
+                    <div class="last-back"></div>
+                    <div class="last-back__left--up"></div>
+                    <div class="last-back__left--down"></div>
+                    <div class="last-front">
+                        <h2 class="add-front__title">Клиника №1 -<br />
+                            как Единая система</h2>
+                        <p class="add-front__text">Наша клиника создана по принципу единой системы,
+                            обеспечивающей профилактику, диагностику и
+                            лечение различных заболеваний, что позволяет
+                            решать большинство проблем, связанных со
+                            здоровьем, в пределах одного медицинского
+                            учреждения.</p>
+                        <div class="add-front__buttons">
+                            <a href="/doctors.html" class="last-front__link">смотреть все направления</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ЗАТЁРКИ В СЕТКЕ -->
+                <div class="last-back__right--up"></div>
+                <div class="last-back__right--down"></div>
             </div>
+        </section>
+
+        <!-- Специалисты -->
+        <section class="specialist">
+            <h1 class="specialist-title">СПЕЦИАЛИСТЫ</h1>
+            <div class="specialist-container">
+                <div class="specialist-box">
+                    <!-- Карточки специалистов -->
+                    <!-- 1 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/grymeetA.jpeg" alt="Груммет Алексей Андреевич" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Груммет<br>Алексей Андреевич
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Колопроктолог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">25
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Диагностика и лечение заболеваний
+                                прямой кишки
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Лазерные операции по проктологии
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="proktolog">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 2 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/ahmedshin.jpeg" alt="Ахметшин Дим Альфирович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Ахметшин<br>Дим Альфирович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Онколог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">17
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Удаление бородавок, папиллом,
+                                родинок, новообразований
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Биопсия молочной, щитовидной железы
+                                под УЗ контролем
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="onkolog">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 3 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/kornilov.jpeg" alt="Корнилов Дмитрий Юрьевич" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Корнилов<br>Дмитрий Юрьевич
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Флеболог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">18
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Удаление варикоза лазером
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Удаление сосудистых звездочек
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="flebolog">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 4 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/ahmedshina.jpeg" alt="Ахметшина Гузель Мадисовна" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Ахметшина<br>Гузель Мадисовна
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Эндокринолог</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">16
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Сахарный диабет
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Нарушения работы щитовидной железы,
+                                надпочечников
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="andocrinolog">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 5 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/batraeva.png" alt="Батраева Виктория Михайловна" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Батраева<br>Виктория Михайловна
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Колопроктолог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">17
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Диагностика и лечение заболеваний
+                                прямой кишки
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Лазерные операции по проктологии
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="proktolog">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 6 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/gerasimenko.png" alt="Герасименко Владимир Леонидович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Герасименко<br>Владимир Леонидович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Хирург,
+                                    отоларинголог</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">17
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Заболевания УХО ГОРЛО НОС
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Для взрослых и детей
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="lor">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 7 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/jigulin.png" alt="Жигулин Владислав Игоревич" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Жигулин<br>Владислав Игоревич
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Гастроэнтеролог,
+                                    педиатр,
+                                    Спортивная медицина</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">11
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Оформление медицинского заключения о
+                                допуске к спорту
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Гастропрофилактика и лечение
+                                заболеваний ЖКТ
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="pediatr">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 8 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/kashtalinchuk.png" alt="Кашталинчук Олеся Владимировка" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Кашталинчук<br>Олеся Владимировка
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Неирохирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">12
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Заболевания центральной и
+                                периферической нервной системы
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Для взрослых и детей
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="neyrohirurg">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 9 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/козюченко.png" alt="Козюченко Иван Степанович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Козюченко<br>Иван Степанович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Невролог,
+                                    иглорефлексотерапевт</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">40
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Остеохондроз, головные боли, мигрени
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Снятие болевого синдрома при
+                                пяточной шпоре, висцеральный массаж,
+                                иглонож
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="nevropotolog">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 10 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/рамазанов.png" alt="Рамазанов Руслан Амангельдыевич" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Рамазанов<br>Руслан Амангельдыевич
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">отоларинголог</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">8
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Заболевание УХО ГОРЛО НОС
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Для взрослых и детей
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="lor">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 11 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/телков.png" alt="Телков Максим Викторович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Телков<br>Максим Викторович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Функциональная
+                                    диагностика</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">18
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                УЗДГ сосудов шеи и головы, верхних и
+                                нижних конечностей
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Узи всех органов
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="uzi">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 12 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/тетюшев.png" alt="Тетюшев Иван Викторович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Тетюшев<br>Иван Викторович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Ортопед-травмотолог</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">22
+                                    года</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Дигностика и лечение заболеваний
+                                опорно-двигательного аппарата
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Снятие болевого синдрома при
+                                пяточной шпоре, висцеральный массаж,
+                                иглонож
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="ortoped">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 13 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/цымбал.png" alt="Цымбал Антон Викторович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Цымбал<br>Антон Викторович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Уролог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">21
+                                    год</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Болезни мочеполовой системы
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Для взрослых и детей
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="urolog">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 14 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/shevchenko.png" alt="Шевченко Евгений Анатольевич" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Шевченко<br>Евгений Анатольевич
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Невролог,
+                                    иглорефлексотерапевт</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">26
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Остеохондроз, головные боли, мигрени
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Снятие болевого синдрома при
+                                пяточной шпоре, висцеральный массаж,
+                                иглонож
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="ortoped">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+
+                    <!-- 15 -->
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/stelmah.png" alt="Стельмах Виктория Валерьевна" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Стельмах<br>Виктория Валерьевна
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Терапевт</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">21
+                                    год</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Выдача санаторно-курортной карты, инфузионная терапия
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Лечение заболеваний с выдачей больничных листов
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <a class="specialist-cart__bottons-details podrobnee" href="/doctors.html"
+                                data-details="pediatr">ПОДРОБНЕЕ</a>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- О клинике -->
+        <div class="about">
+            <div class="about-title">
+                <h1 class="about-title__text">О НАШЕЙ КЛИНИКЕ</h1>
+                <a class="about-title__link" href="/aboutClinic.html">ПОДРОБНЕЕ</a>
+            </div>
+            <p class="about-text">
+                Главная задача – обеспечить наших пациентов
+                высококвалифицированной, быстрой и эффективной медицинской
+                помощью с максимальным удобством для пациента, учитывая принципы
+                врачебной этики. Наши специалисты осуществляют обслуживание на
+                дому детей и взрослых. Средний, младший медицинский и остальной
+                персонал нашей клиники доброжелателен и вежлив, имеет длительный
+                стаж работы в профильных медицинских отделениях.
+            </p>
         </div>
-    </div>
-    <div class="footer__bottom">
-        <div class="footer__bottom-nameCompany">
-            <p>ООО "Медицинский центр Здоровье"</p>
-        </div>
-        <div class="footer__bottom-licenzion">
-            <p class="licenzion-text">Лицензия № ЛО-86-01-002817 от 25.08.2017г.</p>
-        </div>
-    </div>
-</footer>
+
+        <!-- Отзывы -->
+        <section class="bufer">
+            <h1 class="reviews-title reviews-title--top">ОТЗЫВЫ</h1>
+            <div class="reviews">
+                <div class="reviews-box">
+                    <div class="reviews-item reviews--first">
+                        <h4 class="reviews-item__link">Диагностика</h4>
+                        <div class="reviews-item__who">
+                            <p class="reviews-item__who-name">Мариям</p>
+                            <p class="reviews-item__who-date">10 марта 2025</p>
+                        </div>
+                        <p class="reviews-item__text">
+                            Здравствуйте. Была сегодня у вас в клинике. Спасибо огромное
+                            вашим специалистам. В этой клинике мед. сестра из
+                            регистратуры и врач своей поддержкой и настроем хорошим
+                            помогли мне выдержать эти сложные пол часа пока мне делали
+                            диагностику! В других клиниках не было такой поддержки и я
+                            всячески испытывала страх Желаю всему коллективу успехов в
+                            работе,спасибо большое что вы есть!
+                        </p>
+                    </div>
+                    <div class="reviews-center reviews--second">
+                        <div class="reviews-item">
+                            <h4 class="reviews-item__link">ОРТОПЕД</h4>
+                            <div class="reviews-item__who">
+                                <p class="reviews-item__who-name">Дмитрий</p>
+                                <p class="reviews-item__who-date">11 мая 2024</p>
+                            </div>
+                            <p class="reviews-item__text">
+                                Доктор Шевченко профессионал своего дела. В другом месте
+                                назначили блокаду. В то время когда доктор Шевченко не
+                                увидел проблем с коленями, направил к флебологу и
+                                неврологу
+                            </p>
+                        </div>
+                        <a class="reviews-center__link"
+                            href="https://2gis.ru/nizhnevartovsk/firm/1689378141389496/tab/reviews">ЧИТАТЬ ВСЕ
+                            ОТЗЫВЫ</a>
+                    </div>
+                </div>
+                <div class="reviews-item reviews--third">
+                    <h4 class="reviews-item__link">НЕВРАПАТОЛОГ</h4>
+                    <div class="reviews-item__who">
+                        <p class="reviews-item__who-name">Сергей</p>
+                        <p class="reviews-item__who-date">28 ноября 2024</p>
+                    </div>
+                    <p class="reviews-item__text">
+                        Огромное спасибо и низкий поклон доктору Козюченко Ивану
+                        Степановичу! Моя супруга около 6 месяцев не вставала на
+                        ноги, вся ее жизнь проходила в горизонтальном положении.
+                        Не помогло лечение в окружной больнице. Привезли на
+                        носилках и через 24 дня лечения выписали на носилках. И
+                        только Иван Степанович поставил ее на ноги. После пятой
+                        процедуры иглорефлексотерапии супруга встала на ноги и
+                        смогла самостоятельно педвигать и жить полноценной
+                        жизнью. Спасибо Вам, Иван Степанович, за жену, маму,
+                        бабушку от всей нашей семьи!!!
+                    </p>
+                    <div class="reviews-title__back">
+                        <h1 class="reviews-title">ОТЗЫВЫ</h1>
+                    </div>
+                    <div class="corner-left__up"></div>
+                    <div class="corner-left__down"></div>
+                    <div class="corner-right__up"></div>
+                    <div class="corner-right__down"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="bottom center">
+        <footer class="footer bufer">
+            <a class="footer-logo" href="#">
+                <img src="./image/logo2.svg" alt="" />
+            </a>
+            <div class="footer-media">
+                <div class="footer-left">
+                    <a class="footer-left__link" href="./aboutClinic.html">О КЛИНИКЕ</a>
+                    <a class="footer-left__link" href="/service.html">УСЛУГИ</a>
+                    <a class="footer-left__link" href="/doctors.html">ВРАЧИ</a>
+                    <a class="footer-left__link" href="/contacts.html">КОНТАКТЫ</a>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center__email">
+                        <img class="footer-center__email-img" src="/image/Mail.png" alt="" />
+                        <a class="footer-center__email-text" href="mailto:mrt-nv1@mail.ru">mrt-nv1@mail.ru</a>
+                    </div>
+                    <button class="footer-center__button">ОНЛАЙН ЗАПИСЬ</button>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right__box">
+                        <img src="/image/Place Marker.png" alt="" />
+                        <p class="footer-right__box-text">
+                            г.Нижневартовск,<br>
+                            ул.Северная,20а
+                        </p>
+                    </div>
+                    <div class="footer-right__box">
+                        <img class="footer-right__box-img" src="/image/Phone.png" alt="" />
+                        <a class="footer-right__box-phone" href="tel:+79003900559">8 (900) 3900-559</a>
+                    </div>
+                    <div class="footer-right__box">
+                        <img class="footer-right__box-img" src="/image/Phone.png" alt="" />
+                        <a class="footer-right__box-phone" href="tel:+73466406604">8 (3466) 406-604</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-center__text">ООО "Медицинский центр Здоровье"</p>
+            <p class="footer-center__text">Лицензия № ЛО-86-01-002817 от 25.08.2017г.</p>
+        </footer>
+    </section>
+
+    <!-- JS -->
+    <script src="./re.js"></script>
+    <script src="./directionsMain.js"></script>
+    <script src="./tabService.js"></script>
 </body>
+
 </html>

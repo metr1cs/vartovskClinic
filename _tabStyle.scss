@@ -1,62 +1,127 @@
+.tab-menu {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 20px;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: $fontSizeHuge;
+    font-weight: 700;
+    line-height: normal;
+    color: #3F3F3F;
+  }
+}
+
 .tab {
   display: flex;
-  flex-direction: column;
-  // align-items: center;
+  justify-content: space-between;
   gap: 27px;
 
-  &-btn {
+  &__label {
+    height: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(232, 232, 232);
     border-radius: 30px;
-    padding: 5px 15px;
-    border: 2px solid rgb(182, 182, 182);
-    background: transparent; // ← Делаем фон прозрачным
-    color: inherit; // Наследует цвет текста от родителя
-    cursor: pointer; // Добавляем курсор-указатель
-  }
-  &-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 27px;
-  }
-  &-search{
-    padding: 5px 15px;
+    color: rgb(63, 63, 63);
     font-size: 16px;
-    border: 2px solid rgb(182, 182, 182);
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    padding: 9px 28px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(232, 232, 232);
+    }
+  }
+
+  &__search {
+    background: url('./image/search.png') no-repeat 25px center;
+    height: 44px;
+    width: 263px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(232, 232, 232);
     border-radius: 30px;
-  }
-  &-pane{
- background: url(./image/backgroundService.svg);
-  background-size: contain; /* Впишется в контейнер с сохранением пропорций */
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  width: 100%; /* или фиксированные размеры */
-  height: 713px; /* обязательная высота */
+    color: rgb(63, 63, 63);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 9px 28px 9px 62px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-  &__form{
-        padding-top: 40px;
-        display: flex;
-        gap: 52px;
-        row-gap: 110px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+    &::placeholder {
+      text-transform: uppercase;
+      color: rgb(232, 232, 232);
+    }
+
+    &:focus {
+      background: url('./image/search-dark.png') no-repeat 25px center;
+    }
   }
 }
 
-.tab-btn-active {
-  pointer-events: none; // Блокирует клики (если нужно)
-  color: rgb(63, 63, 63);
-  background: rgb(182, 182, 182); // Активная кнопка — с фоном
-  border: 2px solid rgb(182, 182, 182);
-}
-
-.tab-pane:not(.tab-pane-show) {
+.tab>input[type="radio"] {
   display: none;
+}
+
+.navigate>input[type="checkbox"] {
+  display: none;
+}
+
+.navigate-button__block {
+  display: none;
+}
+
+.navigate:has(#phone:checked)>#phone-block,
+.navigate:has(#nav:checked)>#nav-block {
+  display: flex;
+}
+
+.tab-content {
+  display: none;
+}
+
+.doctors-content {
+  display: none;
+}
+
+.tab__search {
+  display: none;
+}
+
+.tab>input[type="radio"]:checked+label {
+  cursor: pointer;
+  background-color: rgb(232, 232, 232);
+}
+
+.page-sale:has(#tab-dms:checked)>#dms,
+.page-sale:has(#tab-sale:checked)>#sale {
+  display: block;
+}
+
+.page-doctors:has(#sale:checked)>#sale,
+.page-doctors:has(#dms:checked)>#dms,
+.page-doctors:has(#tab-service:checked)>#service,
+.page-doctors:has(#tab-doctors:checked)>#doctors,
+.page-doctors:has(#tab-tests:checked)>#tests,
+.page-doctors:has(#tab-hospital:checked)>#hospital {
+  display: block;
+}
+
+.page-doctors:has(#tab-doctors:checked)>.tab-menu>.tab>.tab__search {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .tab {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tab-menu {
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
 }

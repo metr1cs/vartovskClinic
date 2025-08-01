@@ -1,0 +1,231 @@
+.doctors-page {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 124px;
+    justify-content: space-between;
+
+    &--once {
+        margin-top: 153px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 130px;
+    }
+
+    &__list {
+        width: 586px;
+
+        &--new {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-text {
+            font-size: $fontSizeMedium;
+            color: #3F3F3F;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-inscription {
+            text-transform: uppercase;
+            font-size: $fontSizeBiger;
+            line-height: normal;
+            font-weight: 700;
+            color: rgb(117, 219, 71);
+
+            &--dop {
+                margin-top: -24px;
+            }
+        }
+
+        &-title {
+            text-transform: uppercase;
+            font-size: $fontSizeHuge;
+            line-height: normal;
+            font-weight: 700;
+            color: rgb(63, 63, 63);
+            margin-bottom: 30px;
+
+            &--color {
+                color: rgb(117, 219, 71);
+            }
+        }
+
+        &-items {
+            font-size: $fontSizeMedium;
+            line-height: normal;
+            font-weight: 400;
+            color: rgb(63, 63, 63);
+            margin-left: 16px;
+            margin-top: 35px;
+        }
+
+        &-paragraph {
+            color: rgb(255, 255, 255);
+        }
+
+        &-back {
+            background-color: rgb(117, 219, 71);
+            padding: 40px;
+            border-radius: 30px;
+            margin-top: 90px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: -80px;
+        right: 0;
+        z-index: -10;
+        width: 50%;
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        background-color: #DCDCDC;
+        border-radius: 30px;
+        padding: 42px 23px;
+        margin-top: 27px;
+
+        &--ver {
+            margin-top: 64px;
+        }
+
+        &-box {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            &--one {
+                flex-direction: column;
+            }
+        }
+
+        &-item {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            gap: 40px;
+            flex: 1 1 30%;
+            align-items: center;
+
+            &--ver {
+                width: 500px;
+                display: flex;
+                justify-content: space-between;
+                padding: 30px;
+                border-radius: 10px;
+                background-color: #fff;
+                gap: 40px;
+                align-items: center;
+            }
+        }
+
+        &-text {
+            color: #3F3F3F;
+            font-size: $fontSizeMedium;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        &-cost {
+            color: #75DB47;
+            font-size: $fontSizeMedium;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-wrap: nowrap;
+        }
+
+        &-ps {
+            text-transform: uppercase;
+            color: #3F3F3F;
+            font-size: $fontSizeMedium;
+            line-height: normal;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .doctors-page__price-item {
+        width: 100%;
+        flex: 0 1 auto;
+    }
+
+    .doctors-page__price-item--ver {
+        width: 100%;
+        flex: 0 1 auto;
+    }
+
+    .doctors-page__list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .doctors-page {
+        row-gap: 64px;
+    }
+
+    .doctors-page__box {
+        row-gap: 64px;
+    }
+
+    .doctors-page__list-items {
+        margin-top: 20px;
+    }
+
+    .doctors-page__list-title {
+        margin-bottom: 20px;
+    }
+
+    .doctors-page__price--ver {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .doctors-page__price-item--ver,
+    .doctors-page__price-item {
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .doctors-page__price-cost {
+        align-self: flex-end;
+    }
+
+    .doctors-page__price-text {
+        align-self: flex-start;
+    }
+
+    .doctors-page--once {
+        margin-top: 80px;
+    }
+
+    .doctors-page__list-title {
+        margin-bottom: 20px;
+    }
+
+    .doctors-page__list-back {
+        margin-top: 40px;
+    }
+
+    .doctors-page__box {
+        gap: 64px;
+    }
+}

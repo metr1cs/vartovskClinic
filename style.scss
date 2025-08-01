@@ -1,22 +1,223 @@
-@import 'header','content','direction','specialists','aboutindex','aboutClinic','footer','service','tabStyle','basicTest';
-*{
+@import 'vars', 'sale', 'contacts', 'testPage', 'hospital',
+'pageDoctors', 'header', 'direction', 'content', 'specialists',
+'aboutIndex','aboutClinic','footer','service','tabStyle','basicTest';
+
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 body {
-        
-        font-weight: normal;
-        background-position: 141px 2px;
-        background-image: url(./image/headerdnk.png);
-        background-repeat: no-repeat;
-        position: relative;
-  }
-a{
+
+    font-weight: normal;
+    background-position: 141px 2px;
+    // background-image: url(./image/headerdnk.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body {
+    position: relative;
+}
+
+a {
     text-decoration: none;
 }
-  
-.center{
-    padding-left: calc(50% - 642px);
-    padding-right: calc(50% - 642px);
+
+.margin-up {
+    margin-top: -80px;
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.margin-down {
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.center {
+    padding-left: calc(50% - 670px);
+    padding-right: calc(50% - 670px);
+}
+
+.bufer {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+.pol2 {
+    width: 200px;
+    height: 80px;
+    background-color: lightblue;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0% 100%);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.pol3 {
+    width: 200px;
+    height: 80px;
+    background-color: lightblue;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 20%, 0% 100%);
+    border-radius: 20px;
+}
+
+.star {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    clip-path: polygon(50% 0% around 10px, 61% 35%, 98% 35%, 70% 55%, 79% 91%, 50% 70%, 21% 91%, 30% 55%, 2% 35%, 39% 35%);
+    /* Пример формы звезды */
+    border-radius: 10px;
+}
+
+.verh {
+    position: absolute;
+    grid-column: 1 / -1;
+    background-color: royalblue;
+}
+
+.niz {
+    position: absolute;
+    grid-column: 1 / -3;
+    background-color: olive;
+}
+
+.block {
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        padding-top: 156px;
+    }
+}
+
+.block-dna__up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    filter: grayscale(100%);
+    z-index: -30;
+}
+
+.block-dna__down {
+    position: absolute;
+    // top: 1200px;
+    bottom: 0;
+    right: 0;
+    filter: grayscale(100%);
+    z-index: -30;
+}
+
+.cub-up__left {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom-right-radius: 30px;
+    bottom: 0;
+    z-index: 16;
+    left: calc(50% - 207px);
+    background-color: rgb(220, 220, 220, 0.74);
+
+    @media (max-width: 540px) {
+        display: none;
+    }
+}
+
+.cub-down__left {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    z-index: 15;
+    left: calc(50% - 207px);
+    background-color: #fff;
+
+    @media (max-width: 540px) {
+        display: none;
+    }
+}
+
+.cub-up__right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom-left-radius: 30px;
+    bottom: 0;
+    z-index: 16;
+    left: calc(50% + 177px);
+    background-color: rgb(220, 220, 220, 0.74);
+
+    @media (max-width: 540px) {
+        display: none;
+    }
+}
+
+.cub-down__right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    z-index: 15;
+    left: calc(50% + 177px);
+    background-color: #fff;
+
+    @media (max-width: 540px) {
+        display: none;
+    }
+}
+
+
+
+.y {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(305px, 620px));
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    background-color: aquamarine;
+}
+
+.y>img {
+    object-fit: cover;
+    /* Сохраняем пропорции изображения */
+    height: auto;
+    /* Высота должна меняться автоматически */
+    max-width: 100%;
+}
+
+.yy {
+    // width: clamp(305px, 100%, 650px);
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    /* Первое изображение занимает две колонки */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    // grid-column: 1 span;
+}
+
+.r {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.rr {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: fit-content;
 }

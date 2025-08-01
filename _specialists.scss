@@ -1,177 +1,220 @@
-.questionnaire{
-    width: 458px;
-    height: 505px;
-    box-sizing: border-box;
-    border: 3px solid rgb(239, 239, 239);
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.74);
-    position: relative;  /* Родитель для абсолютного позиционирования */
-    padding-top: 100px;  /* Место для фото (подбери значение под высоту фото) */
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.questionnaire__photo {
-    position: absolute;
-    top: -100px;          /* Поднимаем фото наполовину вверх */
-    left: 50%;           /* Центрируем по горизонтали */
-    transform: translateX(-50%); /* Точное центрирование */
-    width: 200px;        /* Ширина фото (подбери под свои размеры) */
-    height: 200px;       /* Высота фото */
-    border-radius: 50%;  /* Круглое фото (если нужно) */
-    overflow: hidden;    /* Обрезка, если фото не квадратное */
-    border: 3px solid rgb(239, 239, 239); /* Граница как у родителя */
-    background: white;   /* Фон, если фото с прозрачностью */
-}
+.specialist {
+    padding: 0 40px;
 
-.questionnaire__photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Чтобы фото заполняло область */
-}
-.specialization{
-    display: flex;
-    gap: 50px;
-    padding: 39px 0;
-
-    &__description{
+    &-cart {
+        position: relative;
         display: flex;
         flex-direction: column;
-        gap: 22px;
-        padding: 9px 21px;
-        color: rgba(63, 63, 63, 0.95);
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-   
-    &__title{
-        color: rgb(63, 63, 63);
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    &__text{
-        color: rgba(63, 63, 63, 0.95);
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    &__singUp{
-    
+        justify-content: space-between;
+        padding: 130px 30px 30px 30px;
+        width: 398px;
+        height: 323px;
+        border: 3px solid #EFEFEF;
         border-radius: 30px;
-        background: rgb(117, 203, 75);
-        padding: 16px 35px;
-        color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        letter-spacing: 0%;
-        text-align: left;
-        text-transform: uppercase;
-        text-align: center;
+        background-color: #fff;
+
+        &__photo {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgb(239, 239, 239);
+            background: white;
+        }
+
+        &__photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &__name {
+            color: #3F3F3F;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &__information {
+            display: flex;
+            width: 385px;
+            justify-content: space-between;
+
+            &-specifically {
+                color: #3F3F3F;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+                min-width: 116px;
+
+                &--text {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &__description {
+            color: #3F3F3F;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 26px;
+
+            &-point {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__bottons {
+            display: flex;
+            width: 385px;
+            justify-content: space-between;
+
+            &-details {
+                width: 172px;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: rgb(239, 239, 239, 78);
+                padding: 12px 0px;
+                color: #636363;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 30px;
+            }
+
+            &-price {
+                width: 172px;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: rgb(255, 255, 255);
+                padding: 12px 0px;
+                color: #3F3F3F;
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 30px;
+            }
+
+            &-signup {
+                text-decoration: none;
+                background-color: #75CB4B;
+                padding: 12px 37px;
+                color: #FFFFFF;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 30px;
+            }
+        }
     }
-    &__details{
-        border-radius: 30px;
-        background: rgba(239, 239, 239, 0.78);
-        padding: 16px 35px;
-        color: rgb(99, 99, 99);
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        letter-spacing: 0%;
-        text-align: left;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    &__botton{
-        margin-top: 33px;
+
+    &-box {
         display: flex;
-        //justify-content: space-between;
-        gap: 40px;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 175px 0 0 0;
+        width: 100%;
     }
-}
-.specialistName{
-    margin-top: 33px;
-    color: rgb(63, 63, 63);
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0px;
-    text-align: left;
-}
-// .specialist__form{
-//     display: flex;
-//     flex-direction: row;
-//     gap: 10px;
-//     margin-left: 28px;
-// }
-.specialitInformation{
-    padding: 0 30px 30px 30px;
-    height: 367px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-end;
-}
-.specialist__titles{
+
+    &-title {
         color: rgb(63, 63, 63);
-font-family: Montserrat;
-font-size: 40px;
-font-weight: 700;
-line-height: 49px;
-letter-spacing: 0%;
-text-align: left;
-text-transform: uppercase;
-margin-top: 128px;
-margin-left: 28px;
+        font-family: Montserrat;
+        font-size: $fontSizeHuge;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 128px;
     }
 
-.specialist__container {
+}
+
+.specialist-container {
     width: 100%;
-    overflow-x: auto; /* Включаем горизонтальную прокрутку */
-    padding-bottom: 20px; /* Чтобы не обрезать тени/эффекты при прокрутке */
-    -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на мобильных */
-}
-
-.specialist__form {
-    display: flex; /* Располагаем карточки в ряд */
-    gap: 10px; /* Отступ между карточками */
-    padding: 40px 0; /* Небольшие отступы сверху и снизу */
-    width: max-content; /* Ширина по содержимому */
-}
-
-.specialistCart {
-    flex: 0 0 auto; /* Запрещаем карточкам сжиматься/растягиваться */
-    //width: 300px; /* Фиксированная ширина карточки или любая другая */
-    
+    overflow-x: auto;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Стили для скроллбара (опционально) */
-.specialist__container::-webkit-scrollbar {
+.specialist-container::-webkit-scrollbar {
     height: 8px;
 }
-.specialist__container::-webkit-scrollbar-track {
+
+.specialist-container::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
 }
-.specialist__container::-webkit-scrollbar-thumb {
+
+.specialist-container::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
-.specialist__container::-webkit-scrollbar-thumb:hover {
+
+.specialist-container::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.fio {
+    display: none;
+}
+
+@media (max-width: 540px) {
+    .specialist-cart {
+        width: 174px;
+        height: auto;
+        padding: 82px 30px 30px 30px;
+    }
+
+    .specialist-cart__name {
+        font-size: 16px;
+    }
+
+    .specialist-cart__information-specifically {
+        font-size: 12px;
+    }
+
+    .specialist-cart__description {
+        font-size: 12px;
+    }
+
+    .specialist-cart__photo {
+        width: 118px;
+        height: 118px;
+    }
+
+    .specialist-cart__information {
+        width: auto;
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px 0;
+    }
+
+    .specialist-cart__bottons {
+        width: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .specialist-cart__bottons-signup {
+        width: 100px;
+    }
+
+    .specialist-box {
+        padding: 80px 0 0 0;
+    }
+
+    .fio {
+        display: block;
+    }
+
+    .specialist-title {
+        margin-top: 50px;
+    }
 }

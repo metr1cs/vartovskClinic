@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Врачи</title>
+    <link rel="shortcut icon" href="./image/logo2.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ЗАЯВКА -->
+    <section class="application">
+        <div class="application-center">
+            <form class="form" action="#">
+                <div class="form-top">
+                    <h1 class="form-top__title">Заказать обратный звонок</h1>
+                    <p class="form-top__text">Заполните форму и наш администратор свяжется с вами для записи в ближайшее
+                        время</p>
+                </div>
+                <div class="form-inputs">
+                    <input class="form-inputs__item" type="text" placeholder="Ваше имя">
+                    <input class="form-inputs__item" type="text" placeholder="+7 (999) 555-55-55">
+                    <input class="form-inputs__item" type="text" placeholder="Какой нужен врач/услуга">
+                    <button class="form-inputs__button">Отправить данные</button>
+                </div>
+                <div class="form-checkbox">
+                    <input class="form-checkbox__marker" type="checkbox" id="personal-data">
+                    <label class="form-checkbox__label" for="personal-data">Соглашаюсь на обработку персональных
+                        данных</label>
+                </div>
+            </form>
+        </div>
+        <div class="complate">
+            <div class="complate-image">
+                <svg width="72.792969" height="54.621094" viewBox="0 0 72.793 54.6211" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Слияние"
+                        d="M31.1758 45.957L67.4609 1.11328C68.5039 -0.175781 70.3945 -0.375 71.6836 0.667969C72.9688 1.71094 73.168 3.59766 72.125 4.88672L32.7852 53.5078C31.9492 54.543 30.5703 54.875 29.3906 54.4258C28.9883 54.3242 28.6016 54.1367 28.2539 53.8594L1.125 32.0977C-0.167969 31.0625 -0.375 29.1719 0.660156 27.8828C1.69531 26.5898 3.58594 26.3828 4.87891 27.418L28.3711 46.2617C29.2305 46.9492 30.4844 46.8164 31.1758 45.957Z"
+                        clip-rule="evenodd" fill="#75DB47" fill-opacity="1.000000" fill-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="complate-box">
+                <h1 class="complate-box__title">Ваша заявка принята</h1>
+                <p class="complate-box__phrase">Спасибо! Скоро свяжемся с Вами!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEADER -->
+    <section class="center">
+        <header class="header bufer">
+            <div class="navigate">
+                <input type="checkbox" name="header" id="nav">
+                <label class="navigate-button" for="nav">
+                    <svg class="svg-burger" viewBox="0 0 28 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <rect id="фрейм 22" width="25.000000" height="16.000000"
+                            transform="translate(1.500000 1.500000)" fill="#FFFFFF" fill-opacity="0" />
+                        <path id="Линия 2" d="M1.5 17.5L26.5 17.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                        <path id="Линия 2" d="M1.5 9.5L26.5 9.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                        <path id="Линия 2" d="M1.5 1.5L26.5 1.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                    </svg>
+                </label>
+                <div class="navigate-button__block navigate-button__block--nav" id="nav-block">
+                    <a class="navigate-button__block-link" href="/aboutClinic.html">о клинике</a>
+                    <a class="navigate-button__block-link" href="/service.html">услуги</a>
+                    <a class="navigate-button__block-link" href="/doctors.html">врачи</a>
+                    <a class="navigate-button__block-link" href="/contacts.html">контакты</a>
+                </div>
+            </div>
+            <a href="/index.html">
+                <img class="header-logo" src="./image/logo2.svg" alt="клинника №1" />
+                <img class="header-logo__textless" src="./image/logo2.png" alt="клинника №1" />
+            </a>
+            <nav class="header-navigate">
+                <a class="header-navigate__link" href="./aboutClinic.html">о клинике</a>
+                <a class="header-navigate__link" href="./service.html">услуги</a>
+                <a class="header-navigate__link" href="./doctors.html">врачи</a>
+                <a class="header-navigate__link" href="/contacts.html">контакты</a>
+            </nav>
+            <div class="header-timeWork">
+                <p class="header-timeWork__text">пн-вс 8:00-20:00</p>
+                <a href="tel:+73466406603" class="header-timeWork__phone">8 (3466) 406-603</a>
+            </div>
+            <div class="navigate">
+                <input type="checkbox" name="header" id="phone">
+                <label class="navigate-button" for="phone">
+                    <svg class="svg-phone" viewBox="0 0 20.125 19.2578" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="path"
+                            d="M19.44 14.58L15.95 12.31C15.62 12.09 15.26 12 14.86 12.06C14.46 12.11 14.14 12.28 13.89 12.58L12.89 13.73C12.76 13.88 12.6 13.96 12.4 14C12.2 14.04 12.01 14.01 11.84 13.92C8.57 12.22 6.52 9.43 5.58 7.92C5.47 7.75 5.44 7.56 5.48 7.35C5.53 7.14 5.64 6.99 5.82 6.87L6.9 6.14C7.07 6.03 7.2 5.89 7.32 5.72C7.42 5.55 7.5 5.37 7.53 5.18C7.57 4.99 7.56 4.79 7.51 4.6C7.47 4.41 7.39 4.24 7.27 4.07L4.73 0.63C4.61 0.46 4.46 0.32 4.29 0.22C4.11 0.11 3.92 0.04 3.71 0.01C3.5 -0.02 3.3 -0.01 3.1 0.04C2.89 0.09 2.71 0.17 2.54 0.29L0.89 1.47C0.39 1.82 0.1 2.28 0.03 2.87C-0.49 7.52 4.44 12.34 4.62 12.52C9.52 18.28 13.98 19.25 16.41 19.25C16.78 19.25 17.14 19.23 17.51 19.17C18.25 19.07 18.79 18.71 19.12 18.06L19.96 16.47C20.13 16.14 20.17 15.79 20.07 15.43C19.97 15.07 19.76 14.79 19.44 14.58Z"
+                            fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </label>
+                <div class="navigate-button__block navigate-button__block--phone" id="phone-block">
+                    <p class="navigate-button__block-link navigate-button__block-link--low">пн-вс 8:00-20:00</p>
+                    <a class="navigate-button__block-link" href="tel:+79003900559">8 (900) 3900-559</a>
+                    <a class="navigate-button__block-link" href="tel:+73466406603">8 (3466) 406-603</a>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- РАБОЧАЯ ОБЛАСТЬ -->
+    <section class="block center">
+        <section class="page-doctors bufer">
+
+            <!-- НАВИГАЦИЯ -->
+            <div class="tab-menu">
+                <h1 class="tab-menu__title">врачи</h1>
+                <div class="tab">
+                    <input checked type="radio" name="tab-sets" id="tab-doctors" value="ВРАЧИ">
+                    <label class="tab__label" for="tab-doctors">все врачи</label>
+                    <input type="radio" name="tab-sets" id="tab-tests" value="АНАЛИЗЫ">
+                    <label class="tab__label" for="tab-tests">анализы</label>
+                    <input type="radio" name="tab-sets" id="tab-hospital" value="ДНЕВНОЙ СТАЦИОНАР">
+                    <label class="tab__label" for="tab-hospital">дневной стационар</label>
+                    <!-- <input class="tab__search" type="search" placeholder="поиск врача" id="searchInput"> -->
+                </div>
+            </div>
+
+            <!-- НАПРАВЛЕНИЯ -->
+            <section class="tab-content" id="doctors">
+                <div class="direction-box" data-tab="doctors">
+                    <article class="direction" data-direction="gastroenterolog">
+                        <img class="direction__image" src="./image/DIRECTIONS/hand-pill.png" alt="">
+                        <h3 class="direction__title">Гастроэнтеролог</h3>
+                        <p class="direction__text">Лечение и диагностика<br>органов ЖКТ</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="lor">
+                        <img class="direction__image" src="./image/DIRECTIONS/ear.png" alt="">
+                        <h3 class="direction__title">Лор</h3>
+                        <p class="direction__text">Лечение заболеваний<br>ЛОР-органов</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="hirurg">
+                        <img class="direction__image" src="./image/DIRECTIONS/syringe.png" alt="">
+                        <h3 class="direction__title">Хирург</h3>
+                        <p class="direction__text">Пункции, инъекции, наложение швов</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="onkolog">
+                        <img class="direction__image" src="./image/DIRECTIONS/med-card.png" alt="">
+                        <h3 class="direction__title">Онколог</h3>
+                        <p class="direction__text">Опухоли: выявление, профилактика, лечение</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="urolog">
+                        <img class="direction__image" src="./image/DIRECTIONS/male.png" alt="">
+                        <h3 class="direction__title">Уролог</h3>
+                        <p class="direction__text">Урология, андрология, профилактика и лечение</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="flebolog">
+                        <img class="direction__image" src="./image/DIRECTIONS/torso.png" alt="">
+                        <h3 class="direction__title">Флеболог</h3>
+                        <p class="direction__text">Сосуды кровеносно-лимфатических систем</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="proktolog">
+                        <img class="direction__image" src="./image/DIRECTIONS/bowel.png" alt="">
+                        <h3 class="direction__title">Проктолог</h3>
+                        <p class="direction__text">Профилактика, диагностика, лечение</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="pediatr">
+                        <img class="direction__image" src="./image/DIRECTIONS/doctor-childe.png" alt="">
+                        <h3 class="direction__title">Терапевт/Педиатр</h3>
+                        <p class="direction__text">Врач для детей и взрослых</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="nevropotolog">
+                        <img class="direction__image" src="./image/DIRECTIONS/head-plus.png" alt="">
+                        <h3 class="direction__title">Невролог</h3>
+                        <p class="direction__text">Нервная система, диагностика и лечение</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="neyrohirurg">
+                        <img class="direction__image" src="./image/DIRECTIONS/atom.png" alt="">
+                        <h3 class="direction__title">Нейрохирург</h3>
+                        <p class="direction__text">Заболевания и травмы нервной системы</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="ortoped">
+                        <img class="direction__image" src="./image/DIRECTIONS/leg.png" alt="">
+                        <h3 class="direction__title">Ортопед-Травматолог</h3>
+                        <p class="direction__text">Деформации опорно-двигательной системы</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="andocrinolog">
+                        <img class="direction__image" src="./image/DIRECTIONS/webcam.png" alt="">
+                        <h3 class="direction__title">Эндокринолог</h3>
+                        <p class="direction__text">Заболевания эндокринной системы</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="uzi">
+                        <img class="direction__image" src="./image/DIRECTIONS/uzi machine.png" alt="">
+                        <h3 class="direction__title">УЗИ</h3>
+                        <p class="direction__text">Неинвазивное исследование организма человека</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="igloreflex">
+                        <img class="direction__image" src="./image/DIRECTIONS/needles.png" alt="">
+                        <h3 class="direction__title">Иглорефлексо-терапевт</h3>
+                        <p class="direction__text">Профилактика и лечение</p>
+                        <div class="direction__back"></div>
+                    </article>
+                    <article class="direction" data-direction="mrt">
+                        <img class="direction__image" src="./image/DIRECTIONS/brain.png" alt="">
+                        <h3 class="direction__title">МРТ</h3>
+                        <p class="direction__text">Исследование внутр. органов и тканей</p>
+                        <div class="direction__back"></div>
+                    </article>
+                </div>
+                <article class="add-front">
+                    <h2 class="add-front__title">не нашли врача/услугу?</h2>
+                    <p class="add-front__text">Наш Медицинский Центр "Здоровье" Клиника №1 постоянно развивается
+                        и растет, приходят новые специалисты и открываются новые направления. К сожалению,
+                        иногда мы
+                        можем не успеть обновить информацию на сайте. Если Вы не нашли подходящего специалиста,
+                        то
+                        Вы всегда можете уточнить информацию у администратора, позвонив нам по телефону, либо
+                        отправить запрос на электронную почту.</p>
+                    <div class="add-front__buttons">
+                        <button class="add-front__buttons-item">отправить запрос</button>
+                    </div>
+                </article>
+            </section>
+
+            <!-- СТРАНИЦЫ НАПРАВЛЕНИЙ -->
+
+            <!-- ГАСТРОЭНТЕРОЛОГ -->
+            <section class="doctors-content" data-id="gastroenterolog">
+                <p class="doctors-name" style="display: none;">ГАСТРОЭНТЕРОЛОГ</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/jigulin.png" alt="Жигулин Владислав Игоревич" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Жигулин<br>Владислав<br class="fio"> Игоревич
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Гастроэнтеролог,
+                                    педиатр,
+                                    спортивная медицина</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">11
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Оформление медицинского заключения о
+                                допуске к спорту
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Гастропрофилактика и лечение
+                                заболеваний ЖКТ
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Боли в животе различной локализации, интенсивности, длительности, характера и периода
+                                появления;</li>
+                            <li>Беспричинное увеличение или потеря массы тела;</li>
+                            <li>Беспричинное ухудшение аппетита;</li>
+                            <li>Приступы тошноты или рвоты, возникающие в любое время;</li>
+                            <li>Изменение частоты и характера стула;</li>
+                            <li>Изжога после еды или питья, горечь во рту;</li>
+                            <li>Отрыжка с неприятным привкусом;</li>
+                            <li>Неприятный запах изо рта (галитоз);</li>
+                            <li>Ощущение тяжести в животе, возникающее после еды;</li>
+                            <li>Боли в области подреберья, кишечные колики;</li>
+                            <li>Необычный цвет кала (черный, обесцвеченный и т.д.);</li>
+                            <li>Кровь на каловых массах или на коже ануса;</li>
+                            <li>Трудности в процессе дефекации;</li>
+                            <li>Вздутие живота, метеоризм, ощущение дискомфорта в животе;</li>
+                            <li>Появление на коже высыпаний, шелушений, экземы;</li>
+                            <li>Беспричинное ухудшение состояния ногтей, волос и кожи.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription">для взрослых и детей</h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Заболевания пищевода;</li>
+                            <li>Заболевания желудка и двенадцатиперстной кишки;</li>
+                            <li>Заболевания поджелудочной железы;</li>
+                            <li>Заболевания печени;</li>
+                            <li>Заболевания желчевыводящей системы;</li>
+                            <li>Заболевания тонкой кишки;</li>
+                            <li>Заболевания толстой кишки, не требующие оперативного лечения;</li>
+                            <li>Инфекционные заболевания органов пищеварительного тракта;</li>
+                            <li>Острые заболевания органов пищеварительного тракта.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ОТОЛАРИНГОЛОГ -->
+            <section class="doctors-content" data-id="lor">
+                <p class="doctors-name" style="display: none;">ОТОЛАРИНГОЛОГ (ЛОР)</p>
+                <h2 class="doctors-page__list-inscription">принимают врачи:</h2>
+                <div class="doctors-page">
+                    <div class="specialist-container">
+                        <div class="specialist-box">
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/gerasimenko.png" alt="Герасименко Владимир Леонидович" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Герасименко<br>Владимир<br class="fio">Леонидович
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Хирург,
+                                            отоларинголог</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">17
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Заболевания УХО ГОРЛО НОС
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Для взрослых и детей
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием от 2.000₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/рамазанов.png" alt="Рамазанов Руслан Амангельдыевич" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Рамазанов<br>Руслан<br class="fio">Амангельдыевич
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Отоларинголог</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">8
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Заболевание УХО ГОРЛО НОС
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Для взрослых и детей
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием от 2.000₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="doctors-page__list-title">Стоимость:</h2>
+                        <div class="doctors-page__price">
+                            <div class="doctors-page__price-box">
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">первичный прием с обследованием эндоскопом</p>
+                                    <p class="doctors-page__price-cost">3500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">повторный прием с обследованием эндоскопом</p>
+                                    <p class="doctors-page__price-cost">2500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">первичный прием без эндоскопа</p>
+                                    <p class="doctors-page__price-cost">2000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">повторный прием без эндоскопа</p>
+                                    <p class="doctors-page__price-cost">1000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">Проф. осмотр</p>
+                                    <p class="doctors-page__price-cost">1000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">удаление серной пробки</p>
+                                    <p class="doctors-page__price-cost">500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">запись обследования на dvd диск</p>
+                                    <p class="doctors-page__price-cost">300 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">туалет уха</p>
+                                    <p class="doctors-page__price-cost">900 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">стрептатест</p>
+                                    <p class="doctors-page__price-cost">1500 рублей</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription doctors-page__list-inscription--dop">для взрослых и
+                            детей
+                        </h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Аденоиды, атрезии и синехии полости носа, аэросинусит;</li>
+                            <li>Гематома носовой перегородки;</li>
+                            <li>Гипертрофия небных миндалин;</li>
+                            <li>Диафрагма гортани, евстахиит;</li>
+                            <li>Заглоточный абсцесс, инородные тела: уха, носа, глотки, гортани;</li>
+                            <li>Инородные тела трахеи и бронхов;</li>
+                            <li>Искривление носовой перегородки;</li>
+                            <li>Кровотечение носовое, ларингит, ларингоспазм;</li>
+                            <li>Мастоидит острый, мукоцеле (пиоцеле) лобной пазухи;</li>
+                            <li>Насморк (ринит): простой, острый, детский;</li>
+                            <li>Неврит кохлеарный, озена (зловонный насморк);</li>
+                            <li>Отек гортани, отгематома (отематома);</li>
+                            <li>Отит: наружний, острый средний, хронический гнойный;</li>
+                            <li>Отомикоз, отосклероз, парезы и параличи гортани, полипы носа;</li>
+                            <li>Серная пробка, синусит, гайморит: острый, хронический;</li>
+                            <li>Фронтит, этмоидит, сфеноидит, склерома, стеноз гортани;</li>
+                            <li>Стридор врожденный, тонзилит хронический, туберкулез гортани;</li>
+                            <li>Фарингит: острый, хронический;</li>
+                            <li>Фарингомикоз, фиброма носоглотки, фурункул преддверия носа.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Длительная заложенность носа;</li>
+                            <li>Затяжной насморк с постоянными выделениями слизистого или гнойного характера;</li>
+                            <li>Регулярное стекание слизи по задней стенке горла (постназальный затек);</li>
+                            <li>Головные боли, особенно при наклонах головы;</li>
+                            <li>Частые боли в горле, боль в ухе;</li>
+                            <li>Затрудненное глотание, увеличение шейных лимфоузлов;</li>
+                            <li>Нарушение слуха и головокружение;</li>
+                            <li>Храп, ухудшение обоняния;</li>
+                            <li>Осиплость, потеря голоса;</li>
+                            <li>Травмы лор-органов, инородное тело.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ХИРУРГ -->
+            <section class="doctors-content" data-id="hirurg">
+                <p class="doctors-name" style="display: none;">ХИРУРГ</p>
+                <h2 class="doctors-page__list-inscription">принимают врачи:</h2>
+                <div class="doctors-page">
+                    <div class="specialist-container">
+                        <div class="specialist-box">
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/grymeetA.jpeg" alt="Груммет Алексей Андреевич" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Груммет<br>Алексей<br class="fio">Андреевич
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Колопроктолог,
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">25
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Диагностика и лечение заболеваний
+                                        прямой кишки
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Лазерные операции по проктологии
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="proktolog">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/ahmedshin.jpeg" alt="Ахметшин Дим Альфирович" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Ахметшин<br>Дим<br class="fio">Альфирович
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Онколог,
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">17
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Удаление бородавок, папиллом,
+                                        родинок, новообразований
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Биопсия молочной, щитовидной железы
+                                        под УЗ контролем
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="onkolog">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/kornilov.jpeg" alt="Корнилов Дмитрий Юрьевич" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Корнилов<br>Дмитрий<br class="fio">Юрьевич
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Флеболог,
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">18
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Удаление варикоза лазером
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Удаление сосудистых звездочек
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="flebolog">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/batraeva.png" alt="Батраева Виктория Михайловна" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Батраева<br>Виктория<br class="fio">Михайловна
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Колопроктолог,
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">19
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Диагностика и лечение заболеваний
+                                        прямой кишки
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Лазерные операции по проктологии
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="proktolog">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/gerasimenko.png" alt="Герасименко Владимир Леонидович" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Герасименко<br>Владимир<br class="fio">Леонидович
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Хирург,
+                                            отоларинголог</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">17
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Заболевания УХО ГОРЛО НОС
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Для взрослых и детей
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="lor">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/тетюшев.png" alt="Тетюшев Иван Викторович" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Тетюшев<br>Иван<br class="fio">Викторович
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Ортопед-травмотолог</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">22
+                                            года</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Дигностика и лечение заболеваний
+                                        опорно-двигательного аппарата
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Снятие болевого синдрома при
+                                        пяточной шпоре, висцеральный массаж,
+                                        иглонож
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="ortoped">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/цымбал.png" alt="Цымбал Антон Викторович" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Цымбал<br>Антон<br class="fio">Викторович
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Уролог,
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">21
+                                            год</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Болезни мочеполовой системы
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Для взрослых и детей
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="urolog">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/shevchenko.png" alt="Шевченко Евгений Анатольевич" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Шевченко<br>Евгений<br class="fio">Анатольевич
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Невролог,
+                                            иглорефлексотерапевт</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">26
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Остеохондроз, головные боли, мигрени
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Снятие болевого синдрома при
+                                        пяточной шпоре, висцеральный массаж,
+                                        иглонож
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <a class="specialist-cart__bottons-details podrobnee" href="#"
+                                        data-details="nevropotolog">ПОДРОБНЕЕ</a>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title">лечим и выполняем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Пункцию гематомы;</li>
+                            <li>Внутрисуставная инъекция;</li>
+                            <li>Пункцию суставов с введением лекарственных препаратов;</li>
+                            <li>Лечебно-диагностическую пункцию для гистологического исследования;</li>
+                            <li>Новокаиновые блокады;</li>
+                            <li>Чистку ногтевого ложа;</li>
+                            <li>Операции при вросшем ногте;</li>
+                            <li>Удаление мозолей (натоптышей);</li>
+                            <li>Первичную хирургическую обработку ран;</li>
+                            <li>Наложение гипсовых повязок;</li>
+                            <li>Наложение и снятие швов;</li>
+                            <li>Иссечение грубых рубцов.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">когда обращаться:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Оперативное лечение различных доброкачественных образований (атеромы, липомы, фибромы);
+                            </li>
+                            <li>При необходимости коррекции вросшего ногтя;</li>
+                            <li>С целью наложения или снятия швов;</li>
+                            <li>При показанной пункции сустава, гематомы;</li>
+                            <li>Для выполнения биопсий;</li>
+                            <li>При назначенных блокадах суставов;</li>
+                            <li>При воспалении лимфоузлов;</li>
+                            <li>При воспалительных изменениях на коже (покраснение,<br>боль, отёк и др.);</li>
+                            <li>При геморрое.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ОНКОЛОГ -->
+            <section class="doctors-content" data-id="onkolog">
+                <p class="doctors-name" style="display: none;">Онколог</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/ahmedshin.jpeg" alt="Ахметшин Дим Альфирович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Ахметшин<br>Дим<br class="fio">Альфирович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Онколог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">17
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Удаление бородавок, папиллом,
+                                родинок, новообразований
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Биопсия молочной, щитовидной железы
+                                под УЗ контролем
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Изменение формы, цвета, размера родинки; </li>
+                            <li>Появление дискомфорта и болезненности в месте локализации образования;</li>
+                            <li>Боли, уплотнение в молочной железе;</li>
+                            <li>Изменения в области соска, такие как: наличие корок, шелушение, появление язвочек или
+                                кровянистые выделения из груди.</li>
+                        </ul>
+                        <h1 class="doctors-page__list-title pad">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Удаление новообразований и подкожной клетчатки, бородавок, папиллом, родинок (только
+                                после первичного приема);</li>
+                            <li>Биопсия молочной и щитовидной железы под УЗИ контролем (рекомендуем после первичного
+                                приема).</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list--new">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">биопсия под контролем УЗИ
+                        </h1>
+                        <p class="doctors-page__list-text">Это малоинвазивное вмешательство заключается в взятии у
+                            пациента клеток или фрагментов ткани для определения природы обнаруженных образований:
+                            доброкачественных или злокачественных.
+                            Кроме того, определяется тип и характеристики злокачественности образования, что позволяет
+                            подобрать наиболее подходящую онко-терапию. Врач контролирует весь процесс манипуляции
+                            (направление иглы и ее положение) на мониторе, видя расположение необходимых участков,
+                            поэтому в руках опытного специалиста эта процедура максимально безопасна. Биопсия
+                            безболезненна, манипуляцию можно сравнить с обычным внутримышечным.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- УРОЛОГ -->
+            <section class="doctors-content" data-id="urolog">
+                <p class="doctors-name" style="display: none;">Уролог</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/цымбал.png" alt="Цымбал Антон Викторович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Цымбал<br>Антон<br class="fio">Викторович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Уролог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">21
+                                    год</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Болезни мочеполовой системы
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Для взрослых и детей
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Изменение запаха, цвета и объема мочи;</li>
+                            <li>Наличие выделений из уретры;</li>
+                            <li>Жжение и зуд;</li>
+                            <li>Боли или ощущение дискомфорта (внизу живота, в пояснице, в области промежности, в паху и
+                                половых
+                                органах); какие-либо видимые изменения семени (у мужчин);</li>
+                            <li>Изменение внешнего вида половых органов;</li>
+                            <li>Травма мочеполовых органов.</li>
+                        </ul>
+                        <div class="doctors-page__list-back">
+                            <p class="doctors-page__list-paragraph">Врачи «Клиника Здоровье» имеют большой опыт в
+                                устранении
+                                таких патологий, как папилломатоз уретры и мочевого пузыря, а также в лечении
+                                новообразований различных органов мочеполовой системы.</p>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription">для взрослых и детей</h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Болезни мочевыводящих путей и мочевого пузыря: цистит, уретрит, мочекаменная болезнь,
+                                различные проблемы с мочеиспусканием (задержка или недержание мочи, частые походы в
+                                туалет и проч.), дисплазия мочевого пузыря;</li>
+                            <li>Болезни почек: гломерулонефрит, пиелонефрит, гидронефроз, нефроптоз и др;</li>
+                            <li>Заболевания мужской репродуктивной системы: простатит, эпидидимит, орхит, баланопостит,
+                                заболевания передающиеся половым путем (ЗППП) - хламидиоз, папилломо-вирусную инфекцию,
+                                уреаплазмоз, микоплазмоз, герпес и другие проблемы;</li>
+                            <li>Спермограмма: Анализ, подготовка к анализу.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ФЛЕБОЛОГ -->
+            <section class="doctors-content" data-id="flebolog">
+                <p class="doctors-name" style="display: none;">Флеболог</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/kornilov.jpeg" alt="Корнилов Дмитрий Юрьевич" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Корнилов<br>Дмитрий<br class="fio">Юрьевич
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Флеболог,
+                                    хирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">18
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Удаление варикоза лазером
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Удаление сосудистых звездочек
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.000₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Тяжесть и боль в ногах;</li>
+                            <li>Отеки, которые усиливаются после длительного стояния или сидения;</li>
+                            <li>Видимые варикозные вены или сосудистые звездочки;</li>
+                            <li>Ночные судороги;</li>
+                            <li>Изменения цвета кожи на ногах и плохо заживающие раны.</li>
+                        </ul>
+                        <h1 class="doctors-page__list-title pad">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Удаление всех видов грыж;</li>
+                            <li>Удаление доброкачественных новообразований кожи и подкожной клетчатки (липомы,
+                                папилломы, атеромы);</li>
+                            <li>Операции по поводу вросшего ногтя и панариция;</li>
+                            <li>Операции по поводу гнойных процессов мягких тканей;</li>
+                            <li>Операции по удалению варикозных вен (как открытые, так и с применением малоинвазивных
+                                лазерных технологий);</li>
+                            <li>Склеротерапия при варикозной болезни нижних конечностей (лечение сосудистых звездочек).
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list--new">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">информация о докторе
+                        </h1>
+                        <p class="doctors-page__list-text">В городе Нижневартовск является единственным специалистом
+                            владеющим и ежедневно практикующим, как открытые так и малотравматичные «лазерные» операции
+                            на венозной системе, занимаюсь диагностикой и лечением тромбозов различной локализации, в
+                            том числе и при угрозе «отрыва» тромба (его флотации).
+                            В практике ежедневно применяет только самые передовые методы диагностики патологии
+                            сосудистой системы (в том числе компьютерную и магнитнорезонансную томографию). Является
+                            одним из немногих специалистов хирургов использующих в ежедневной практике основной метод
+                            диагностики патологии венозного оттока – ультразвуковое ангиосканирование.
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ПРОКТОЛОГ -->
+            <section class="doctors-content" data-id="proktolog">
+                <p class="doctors-name" style="display: none;">Колопроктолог</p>
+                <h2 class="doctors-page__list-inscription">принимают врачи:</h2>
+                <div class="doctors-page">
+                    <div class="specialist-container">
+                        <div class="specialist-box">
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/batraeva.png" alt="Батраева Виктория Михайловна" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Батраева<br>Виктория<br class="fio">Михайловна
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Колопроктолог,
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">19
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Диагностика и лечение заболеваний
+                                        прямой кишки
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Лазерные операции по проктологии
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/grymeetA.jpeg" alt="Груммет Алексей Андреевич" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Груммет<br>Алексей<br class="fio">Андреевич
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Колопроктолог,
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">25
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Диагностика и лечение заболеваний
+                                        прямой кишки
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Лазерные операции по проктологии
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Консультация врача проктолога и первичный осмотр;</li>
+                            <li>Повторный прием врача колопроктолога, консультация и осмотр</li>
+                            <li>Блокада анальной трещины;</li>
+                            <li>Иссечение наружного геморриодального узла ( 1 узел);</li>
+                            <li>Склерозирование внутреннего геморриодального узла (1 узел);</li>
+                            <li>Удаление периональных кондилом (штука);</li>
+                            <li>Геморриодэктомия;</li>
+                            <li>Иссечение анальной трещины;</li>
+                            <li>Иссечение ЭКХ (эпителиально-копчиковый ход);</li>
+                            <li>Иссечение параректального свища;</li>
+                            <li>Лазерная геморроидопластика.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Длительная заложенность носа;</li>
+                            <li>Затяжной насморк с постоянными выделениями слизистого или гнойного характера;</li>
+                            <li>Регулярное стекание слизи по задней стенке горла (постназальный затек);</li>
+                            <li>Головные боли, особенно при наклонах головы;</li>
+                            <li>Частые боли в горле, боль в ухе;</li>
+                            <li>Затрудненное глотание, увеличение шейных лимфоузлов;</li>
+                            <li>Нарушение слуха и головокружение;</li>
+                            <li>Храп, ухудшение обоняния;</li>
+                            <li>Осиплость, потеря голоса;</li>
+                            <li>Травмы лор-органов, инородное тело.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ПЕДИАТР -->
+            <section class="doctors-content" data-id="pediatr">
+                <p class="doctors-name" style="display: none;">Терапевт/Педиатр</p>
+                <h2 class="doctors-page__list-inscription">принимают врачи:</h2>
+                <div class="doctors-page">
+                    <div class="specialist-container">
+                        <div class="specialist-box">
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/stelmah.png" alt="Стельмах Виктория Валерьевна" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Стельмах<br>Виктория<br class="fio">Валерьевна
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Терапевт</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">21
+                                            год</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Выдача санаторно-курортной карты, инфузионная терапия
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Лечение заболеваний с выдачей больничных листов
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/jigulin.png" alt="Жигулин Владислав Игоревич" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Жигулин<br>Владислав<br class="fio">Игоревич
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Гастроэнтеролог,
+                                            педиатр,
+                                            спортивная медицина</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">11
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Оформление медицинского заключения о
+                                        допуске к спорту
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Гастропрофилактика и лечение
+                                        заболеваний ЖКТ
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription">терапевт</h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Различные заболевания органов дыхания, сердечно-сосудистой системы, почек, суставов и
+                                других органов;</li>
+                            <li>Диагностика и лечение различных патологических состояний желудочно-кишечного тракта,
+                                желчного пузыря и печени;</li>
+                            <li>Воспалительные заболевания кишечника инфекционного и неинфекционного характера;</li>
+                            <li>Функциональные расстройства желудочно-кишечного тракта и желчевыводящих путей;</li>
+                            <li>Острые и хронические панкреатиты, холециститы, холангиты;</li>
+                            <li>Язвенная болезнь желудка и двенадцатиперстной кишки;</li>
+                            <li>Острые и хронические гастродуодениты, гастриты, ГЭРБ;</li>
+                            <li>Гепатиты и прочее.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription">для детей</h2>
+                        <h1 class="doctors-page__list-title">Педиатр – это...</h1>
+                        <p class="doctors-page__list-text">Первый врач с которым встречается только что родившийся
+                            человек, к которому родители обращаются со всеми проблемами здоровья ребенка. Наблюдая за
+                            ростом и развитием ребенка с момента его рождения, педиатр дает необходимые рекомендации
+                            матери по уходу, вскармливанию, закаливанию ребенка.
+
+                            Врач педиатр уделяет большое внимание профилактике заболеваний, твердо убежденный в том, что
+                            болезнь легче предупредить, чем ее лечить. При необходимости педиатр рекомендует
+                            диагностические и лабораторные исследования, контролирует и анализирует их результаты и
+                            назначает необходимое лечение, исходя из принципа «лечить больного, а не болезнь».
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- НЕВРОЛОГ -->
+            <section class="doctors-content" data-id="nevropotolog">
+                <p class="doctors-name" style="display: none;">Невролог</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/козюченко.png" alt="Козюченко Иван Степанович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Козюченко<br>Иван<br class="fio">Степанович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Невролог,
+                                    иглорефлексотерапевт</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">40
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Остеохондроз, головные боли, мигрени
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Снятие болевого синдрома при
+                                пяточной шпоре, висцеральный массаж,
+                                иглонож
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription">для взрослых и детей</h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Бессонница, люмбалгия, люмбаго;</li>
+                            <li>Головокружение, вегето-сосудистая дистония;</li>
+                            <li>Ишиас, лечение радикулита, мигрень, невралгия;</li>
+                            <li>Грыжа межпозвонкового диска, головная боль, остеохондроз;</li>
+                            <li>Защемление седалищного нерва, шум в ушах, нарушения сна;</li>
+                            <li>Последствия черепно - мозговых травм (посттравматическая энцефалопатия), невралгия
+                                тройничного нерва и др.;</li>
+                            <li>Хроническая недостаточность мозгового кровообращения (дисциркуляторная энцефалопатия);
+                            </li>
+                            <li>Нарушения памяти, гипертоническая энцефалопатия, синдром хронической усталости;
+                                головокружения, невралгия тройничного нерва, опухоли головного и спинного мозга;</li>
+                            <li>Невриты, неврологические осложнения остеохондроза позвоночника; невропатия лицевого
+                                нерва, различные полиневропатии;боли в спине различного происхождения;</li>
+                            <li>Приступы эпилепсиинарушения ходьбы, падения, энцефалиты;</li>
+                            <li>Инсульты и другие нарушения кровообращения головного мозга.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Хроническая усталость;</li>
+                            <li>Неустойчивость артериального давления;</li>
+                            <li>Снижение концентрации внимания;</li>
+                            <li>Пониженное артериальное давление;</li>
+                            <li>Нарушения сердечного ритма;</li>
+                            <li>Непереносимость нагрузок;</li>
+                            <li>Частая головная боль;</li>
+                            <li>Боли в левой половине груди;</li>
+                            <li>Расстройства потоотделения гипергидроз;</li>
+                            <li>Гипервентиляционные расстройства (непереносимость духоты);</li>
+                            <li>Снижение настроения, раздражительность;</li>
+                            <li>Нарушения сна, тревожность;</li>
+                            <li>Обмороки и предобморочные состояния, головокружения, "шум в ушах" , "шум в голове".</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- НЕЙРОХИРУРГ -->
+            <section class="doctors-content" data-id="neyrohirurg">
+                <p class="doctors-name" style="display: none;">Нейрохирург</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/kashtalinchuk.png" alt="Кашталинчук Олеся Владимировка" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Кашталинчук<br>Олеся<br class="fio">Владимировка
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Неирохирург</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">12
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Заболевания центральной и
+                                периферической нервной системы
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Для взрослых и детей
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription">для взрослых и детей</h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Онкологические заболевания (опухоли головного и спинного мозга), спастические синдромы
+                                (последствия инсультов, последствия травм спинного мозга и черепно- мозговых травм);
+                            </li>
+                            <li>Дегенеративные заболевания позвоночника (шейного, грудного, поясничного отделов
+                                позвоночника с грыжевой компрессией, стенозы позвоночного канала), сосудистая патология
+                                головного мозга (аневризмы, артерио-венозные мальфармации);</li>
+                            <li>Врожденная патология головного мозга (гидроцефалия, аномалия Арнольда-Киари,
+                                Денди-Уокера, субарахноидальные кисты), лечебные медикаментозные блокады при стойких
+                                болевых синдромах;</li>
+                            <li>Черепно-мозговая травма, позвоночно-спинальная травма;</li>
+                            <li>Воспалительные заболевания головного и спинного мозга (вентрикулиты, менингоэнцефалиты,
+                                абсцессы головного и спинного мозга);</li>
+                            <li>Последствия черепно-мозговой травмы (дефекты черепа);</li>
+                            <li>Повреждений периферической нервной системы (туннельные нейропатиии), воспалительные
+                                заболевания позвоночника (спондилиты, спондилодисциты).</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Головные боли и головокружение;</li>
+                            <li>Острые боли в позвоночнике, ограничивающие движения рук, ног, туловища, боль в спине и
+                                шее;</li>
+                            <li>Нарушения движений и координации;</li>
+                            <li>Онемение в конечностях, резкое развитие судорог;</li>
+                            <li>Травмы головы и позвоночника;</li>
+                            <li>Нарушения/резкое снижение зрения и слуха;</li>
+                            <li>Постоянное подташнивание, нарушение половой функции;</li>
+                            <li>Врожденные аномалии, подозрение на опухоли;</li>
+                            <li>Неэффективность консервативного лечения.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ОРТОПЕД-ТРАВМАТОЛОГ -->
+            <section class="doctors-content" data-id="ortoped">
+                <p class="doctors-name" style="display: none;">Ортопед-Травматолог</p>
+                <h2 class="doctors-page__list-inscription">принимают врачи:</h2>
+                <div class="doctors-page">
+                    <div class="specialist-container">
+                        <div class="specialist-box">
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/тетюшев.png" alt="Тетюшев Иван Викторович" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Тетюшев<br>Иван<br class="fio">Викторович
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Ортопед-травмотолог,<br>
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">22
+                                            года</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Дигностика и лечение заболеваний
+                                        опорно-двигательного аппарата
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Снятие болевого синдрома при
+                                        пяточной шпоре, висцеральный массаж,
+                                        иглонож
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием 3.000₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                            <article class="specialist-cart">
+                                <div class="specialist-cart__photo">
+                                    <img src="./circlePhoto/shevchenko.png" alt="Шевченко Евгений Анатольевич" />
+                                </div>
+                                <h3 class="specialist-cart__name">
+                                    Шевченко<br>Евгений<br class="fio">Анатольевич
+                                </h3>
+                                <div class="specialist-cart__information">
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Специализация<br><span
+                                            class="specialist-cart__information-specifically--text">Ортопед-травматолог,<br>
+                                            хирург</span>
+                                    </h4>
+                                    <h4 class="specialist-cart__information-specifically">
+                                        Опыт работы<br><span class="specialist-cart__information-specifically--text">26
+                                            лет</span>
+                                    </h4>
+                                </div>
+                                <ul class="specialist-cart__description">
+                                    <li class="specialist-cart__description-point">
+                                        Остеохондроз, головные боли, мигрени
+                                    </li>
+                                    <li class="specialist-cart__description-point">
+                                        Снятие болевого синдрома при
+                                        пяточной шпоре, висцеральный массаж,
+                                        иглонож
+                                    </li>
+                                </ul>
+                                <div class="specialist-cart__bottons">
+                                    <h3 class="specialist-cart__bottons-price">прием 3.000₽</h3>
+                                    <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription doctors-page__list-inscription--dop">для взрослых и
+                            детей
+                        </h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Плоскостопие, дефекты осанки, паратиреоидная остеодистрофия;</li>
+                            <li>Деформирующий остеоз, фиброзная остеодисплазия;</li>
+                            <li>Вторичные злокачественные опухоли;</li>
+                            <li>Параоссальная фибросаркома, опухоль Юинга, остеогенная саркома;</li>
+                            <li>Хондромиксосаркома, переломы лопатки;</li>
+                            <li>Изолированные переломы большего и малого бугорков;</li>
+                            <li>Переломы дистального конца плечевой кости;</li>
+                            <li>Соединение сухожилий (в том числе ахиллова), удаление металлоконструкций, монтаж
+                                аппарата Илизарова, демонтаж аппарата Илизарова, коррекция hallux valgus;</li>
+                            <li>Удаление экзостоза, диагностическая артроскопия;</li>
+                            <li>Артроскопическая менискотомия, артроскопическое удаление внутрисуставных тел,
+                                артроскопическое рассечение синовиальных складок, металлоостеосинтез, пластика связки
+                                надколенника;</li>
+                            <li>Артроскопическая хондропластика, мозаичная хондропластика;</li>
+                            <li>Внутрисуставная стабилизация коленного сустава, стабилизация надколенника,
+                                артроскопический артролиз суставов.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">когда обращаться:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Переломы костей с нарушением функции, повторные переломы, остаточные явления
+                                перенесенного полиомиелита;</li>
+                            <li>Ушибы, растяжения, ожоги и отморожения, укусы животных и насекомых;</li>
+                            <li>Жалобы на упорные боли в конечностях, суставах, позвоночнике;</li>
+                            <li>Наличие при исследовании деформаций конечностей, грудной клетки, позвоночника,
+                                плоскостопия, нарушения функции крупных и мелких суставов.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ЭНДОКРИНОЛОГ -->
+            <section class="doctors-content" data-id="andocrinolog">
+                <p class="doctors-name" style="display: none;">Эндокринолог</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/ahmedshina.jpeg" alt="Ахметшина Гузель Мадисовна" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Ахметшина<br>Гузель<br class="fio">Мадисовна
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span
+                                    class="specialist-cart__information-specifically--text">Эндокринолог</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">16
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Сахарный диабет
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Нарушения работы щитовидной железы,
+                                надпочечников
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Резкий набор или потеря веса;</li>
+                            <li>Увеличение или уменьшение аппетита;</li>
+                            <li>Повышенная жажда и частое мочеиспускание;</li>
+                            <li>Трудности с засыпанием, бессонница, постоянная сонливость;</li>
+                            <li>Повышенная раздражительность, тревожность, депрессивное состояние, слабость, усталось;
+                            </li>
+                            <li>Снижение остроты зрения, "звездочки" в глазах;</li>
+                            <li>Сухость кожи, выпадение волос, ломкость ногтей;</li>
+                            <li>Ухудшение памяти и концентрации;</li>
+                            <li>Нарушения менструального цикла у женщин;</li>
+                            <li>Дискомфорт, першение или ощущение кома в горле;</li>
+                            <li>Дрожание конечностей;</li>
+                            <li>Нарушения репродуктивной функции.</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription">для взрослых и детей</h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Гипер- или гипотиреоидные состояния;</li>
+                            <li>Сахарный диабет;</li>
+                            <li>Болезнь Кушинга;</li>
+                            <li>Болезнь Аддисона (надпочечниковая недостаточность);</li>
+                            <li>Гипер-, гипоальдостеронизм;</li>
+                            <li>Синдром неадекватной секреции антидиуретического гормона;</li>
+                            <li>Акромегалия, гигантизм, нанизм;</li>
+                            <li>Дисбаланс половых гормонов;</li>
+                            <li>Гипофизарная недостаточность и многие другие патологии.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- УЗИ -->
+            <section class="doctors-content" data-id="uzi">
+                <p class="doctors-name" style="display: none;">Ультразвуковое исследование (УЗИ)</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <div class="doctors-page__box">
+                        <article class="specialist-cart">
+                            <div class="specialist-cart__photo">
+                                <img src="./circlePhoto/телков.png" alt="Телков Максим Викторович" />
+                            </div>
+                            <h3 class="specialist-cart__name">
+                                Телков<br>Максим<br class="fio">Викторович
+                            </h3>
+                            <div class="specialist-cart__information">
+                                <h4 class="specialist-cart__information-specifically">
+                                    Специализация<br><span
+                                        class="specialist-cart__information-specifically--text">Функциональная<br>диагностика</span>
+                                </h4>
+                                <h4 class="specialist-cart__information-specifically">
+                                    Опыт работы<br><span class="specialist-cart__information-specifically--text">18
+                                        лет</span>
+                                </h4>
+                            </div>
+                            <ul class="specialist-cart__description">
+                                <li class="specialist-cart__description-point">
+                                    УЗДГ сосудов шеи и головы, верхних и
+                                    нижних конечностей
+                                </li>
+                                <li class="specialist-cart__description-point">
+                                    Узи всех органов
+                                </li>
+                            </ul>
+                            <div class="specialist-cart__bottons">
+                                <h3 class="specialist-cart__bottons-price">прием от 800₽</h3>
+                                <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                            </div>
+                        </article>
+                        <div class="doctors-page__list">
+                            <h1 class="doctors-page__list-title">Что исследовать?</h1>
+                            <ul class="doctors-page__list-items">
+                                <li>Сосуды головного мозга;</li>
+                                <li>Брюшную полость;</li>
+                                <li>Щитовидную железу;</li>
+                                <li>Почки;</li>
+                                <li>Мочевой пузырь;</li>
+                                <li>Простату;</li>
+                                <li>Сосуды шеи;</li>
+                                <li>Молочные железы;</li>
+                                <li>Сосуды конечностей.</li>
+                            </ul>
+                        </div>
+                        <div class="doctors-page__list margin-down">
+                            <h1 class="doctors-page__list-title doctors-page__list-title--color">где применяется:</h1>
+                            <ul class="doctors-page__list-items">
+                                <li>Абдоминальные исследования;</li>
+                                <li>Интраоперационные исследования;</li>
+                                <li>Неонатальные исследования;</li>
+                                <li>Радиология;</li>
+                                <li>Кардиология;</li>
+                                <li>Онкология;</li>
+                                <li>Неотложная медицина.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list margin-up">
+                        <h2 class="doctors-page__list-title">Стоимость:</h2>
+                        <div class="doctors-page__price">
+                            <div class="doctors-page__price-box">
+                                <article class="doctors-page__price-item--ver">
+                                    <p class="doctors-page__price-text">Денситометрия (определение плотности костной
+                                        ткани)</p>
+                                    <p class="doctors-page__price-cost">1500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">УЗДГ (ультразвуковая допплерография сосудов)</p>
+                                    <p class="doctors-page__price-cost">2500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">Брюшная полость (печень, желчный пузырь,
+                                        поджелудочная железа, селезенка)</p>
+                                    <p class="doctors-page__price-cost">2000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">Брюшная полость с функциональной пробой желчного
+                                        пузыря</p>
+                                    <p class="doctors-page__price-cost">2200 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">почки</p>
+                                    <p class="doctors-page__price-cost">1200 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">мочевой пузырь</p>
+                                    <p class="doctors-page__price-cost">800 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">почки + мочевой пузырь</p>
+                                    <p class="doctors-page__price-cost">1500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">печень + желчный пузырь</p>
+                                    <p class="doctors-page__price-cost">1000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">мягкие ткани</p>
+                                    <p class="doctors-page__price-cost">800 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">предстательная железа трузи (через прямую кишку)
+                                    </p>
+                                    <p class="doctors-page__price-cost">2200 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">предстательная железа трансабдоминально (через
+                                        брюшную сетку)</p>
+                                    <p class="doctors-page__price-cost">1500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">мошонка</p>
+                                    <p class="doctors-page__price-cost">1000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">щитовидная железа</p>
+                                    <p class="doctors-page__price-cost">1200 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">молочные железы женщины</p>
+                                    <p class="doctors-page__price-cost">1500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">молочные железы мужчины</p>
+                                    <p class="doctors-page__price-cost">1200 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">лимфоузлы (1 область)</p>
+                                    <p class="doctors-page__price-cost">800 рублей</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- ИГЛОРЕФЛЕКСОТЕРАПЕВТ -->
+            <section class="doctors-content" data-id="igloreflex">
+                <p class="doctors-name" style="display: none;">Иглорефлексотерапевт</p>
+                <h2 class="doctors-page__list-inscription">принимает врач:</h2>
+                <div class="doctors-page doctors-page--once">
+                    <article class="specialist-cart">
+                        <div class="specialist-cart__photo">
+                            <img src="./circlePhoto/козюченко.png" alt="Козюченко Иван Степанович" />
+                        </div>
+                        <h3 class="specialist-cart__name">
+                            Козюченко<br>Иван<br class="fio">Степанович
+                        </h3>
+                        <div class="specialist-cart__information">
+                            <h4 class="specialist-cart__information-specifically">
+                                Специализация<br><span class="specialist-cart__information-specifically--text">Невролог,
+                                    иглорефлексотерапевт</span>
+                            </h4>
+                            <h4 class="specialist-cart__information-specifically">
+                                Опыт работы<br><span class="specialist-cart__information-specifically--text">40
+                                    лет</span>
+                            </h4>
+                        </div>
+                        <ul class="specialist-cart__description">
+                            <li class="specialist-cart__description-point">
+                                Остеохондроз, головные боли, мигрени
+                            </li>
+                            <li class="specialist-cart__description-point">
+                                Снятие болевого синдрома при
+                                пяточной шпоре, висцеральный массаж,
+                                иглонож
+                            </li>
+                        </ul>
+                        <div class="specialist-cart__bottons">
+                            <h3 class="specialist-cart__bottons-price">прием 2.500₽</h3>
+                            <a class="specialist-cart__bottons-signup" href="#">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </article>
+                    <div class="doctors-page__list margin-up">
+                        <h2 class="doctors-page__list-title">Стоимость:</h2>
+                        <div class="doctors-page__price">
+                            <div class="doctors-page__price-box">
+                                <article class="doctors-page__price-item--ver">
+                                    <p class="doctors-page__price-text">иглоукалывание (1 сеанс)</p>
+                                    <p class="doctors-page__price-cost">2000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">висцеральный массаж живота</p>
+                                    <p class="doctors-page__price-cost">1500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">удаление шпоры</p>
+                                    <p class="doctors-page__price-cost">1000 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">хиджама (спина) 1 банка</p>
+                                    <p class="doctors-page__price-cost">500 рублей</p>
+                                </article>
+                                <article class="doctors-page__price-item">
+                                    <p class="doctors-page__price-text">игла-нож</p>
+                                    <p class="doctors-page__price-cost">500 рублей</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription doctors-page__list-inscription--dop">для взрослых и
+                            детей
+                        </h2>
+                        <h1 class="doctors-page__list-title">лечим и консультируем:</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Болезни сердечно-сосудистой системы (артериальная гипертания, ишемическая болезнь
+                                сердца, вегетососудистая дистония;)</li>
+                            <li>Органов дыхания (бронхиальная астма, бронхиты);</li>
+                            <li>Пищеварительного тракта (язвенная болезнь, гастрит, панкреатит);</li>
+                            <li>Аллергические состояния, в том числе вазомоторный ринит;</li>
+                            <li>Нарушения обмена веществ, в том числе избыточный вес и состояния, связанные с
+                                задержкой жидкости в организме;</li>
+                            <li>Болезни мочеполовой системы (пиелонефриты, циститы, простатиты, воспалительные
+                                заболевания женской половой сферы, бесплодие);</li>
+                            <li>Болезни опорно-двигательного аппарата, нервной системы, лор-органов, органов зрения
+                                и психоэмоциональной сферы (остеохондроз позвоночника, артриты, головные боли
+                                различного генеза, гаймориты, конъюнктивиты, депрессивные и астенические состояния,
+                                синдром хронической усталости и т. д.).</li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">возможные симптомы</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Ожирение;</li>
+                            <li>Энурез, дисменореи, хронический простатит;</li>
+                            <li>Импотенции, нарушения эректильной функции;</li>
+                            <li>Диспептические явления при хроническом гастрите, гастроптозе, хроническом
+                                холецистите, раздраженном кишечнике;</li>
+                            <li>Хронических бронхитах, бронхиальной астме;</li>
+                            <li>Невритах лицевого нерва, нарушениях кровообращения головного мозга;</li>
+                            <li>Вегетативные нарушения функционального характера;</li>
+                            <li>Восстановление двигательных функций у постинсультных больных;</li>
+                            <li>Болевой синдром при остеохондрозе позвоночника, костно-мышечной патологии;</li>
+                            <li>Артрит, деформирующий остеоартроз, плечелопаточный периартроз, артрозы суставов;
+                            </li>
+                            <li>Мигрени, нервозность, быстрая утомляемость;</li>
+                            <li>Регуляция сна, болевые синдромы.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- МРТ -->
+            <section class="doctors-content" data-id="mrt">
+                <p class="doctors-name" style="display: none;">МРТ</p>
+                <h2 class="doctors-page__list-inscription">Магнитно-резонансная томография</h2>
+                <div class="doctors-page">
+                    <div class="doctors-page">
+                        <div>
+                            <div class="doctors-page__price doctors-page__price--ver">
+                                <div class="doctors-page__price-box">
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">головной мозг</p>
+                                        <p class="doctors-page__price-cost">4000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">пояснично-крестцовый отдел (копчик не
+                                            входит)</p>
+                                        <p class="doctors-page__price-cost">4000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">головной мозг с сосудами</p>
+                                        <p class="doctors-page__price-cost">5000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">гипофиз</p>
+                                        <p class="doctors-page__price-cost">4000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">шейный отдел</p>
+                                        <p class="doctors-page__price-cost">4000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">орбиты</p>
+                                        <p class="doctors-page__price-cost">4000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">шейный отдел с сосудами</p>
+                                        <p class="doctors-page__price-cost">5000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">приточные пазухи носа</p>
+                                        <p class="doctors-page__price-cost">4000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">коленный сустав (один)</p>
+                                        <p class="doctors-page__price-cost">5000 рублей</p>
+                                    </article>
+                                    <article class="doctors-page__price-item">
+                                        <p class="doctors-page__price-text">тазобедренные суставы</p>
+                                        <p class="doctors-page__price-cost">6000 рублей</p>
+                                    </article>
+                                    <h2 class="doctors-page__price-ps">выдача результатов сразу на руки (диск с
+                                        описанием + заключение)</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctors-page__list--new">
+                        <h1 class="doctors-page__list-title doctors-page__list-title--color">Магнитно-резонансная
+                            томография (мрт)</h1>
+                        <p class="doctors-page__list-text">Томографический метод исследования внутренних органов и
+                            тканей с использованием физического явления ядерного магнитного резонанса — метод основан на
+                            измерении МР-срез головыэлектромагнитного отклика ядер атомов водорода на возбуждение их
+                            определённой комбинацией электромагнитных волн в постоянном магнитном поле высокой
+                            напряжённости.
+                        </p>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription doctors-page__list-inscription--dop">относительные
+                        </h2>
+                        <h1 class="doctors-page__list-title">противопоказания</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Инсулиновые насосы, нервные стимуляторы;</li>
+                            <li>Неферромагнитные имплантаты внутреннего уха;</li>
+                            <li>Протезы клапанов сердца (в высоких полях, при подозрении на дисфункцию);</li>
+                            <li>Кровоостанавливающие клипсы (кроме сосудов мозга);</li>
+                            <li>Декомпенсированная сердечная недостаточность;</li>
+                            <li>Первый триместр беременности;</li>
+                            <li>Клаустрофобия (панические приступы во время нахождения в тоннеле аппарата могут не
+                                позволить провести исследование), неадекватность пациента;</li>
+                            <li>Необходимость в физиологическом мониторинге;</li>
+                            <li>Тяжёлое/крайне тяжелое состояние пациента <br> по основному/сопутствующему заболеванию.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="doctors-page__list">
+                        <h2 class="doctors-page__list-inscription doctors-page__list-inscription--dop">абсолютные</h2>
+                        <h1 class="doctors-page__list-title">противопоказания</h1>
+                        <ul class="doctors-page__list-items">
+                            <li>Установленный кардиостимулятор (изменения магнитного поля могут имитировать сердечный
+                                ритм);</li>
+                            <li>Ферромагнитные или электронные имплантаты среднего уха;</li>
+                            <li>Большие металлические имплантаты, ферромагнитные осколки;</li>
+                            <li>Ферромагнитные аппараты Илизарова.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- ДНЕВНОЙ СТАЦИОНАР -->
+            <section class="tab-content" id="hospital">
+                <h2 class="doctors-page__list-inscription">подходит, если вам необходимо:</h2>
+                <div class="hospital" data-tab="hospital">
+                    <div class="hospital-box">
+                        <div class="hospital-box__left">
+                            <article class="direction" data-direction="gastroenterolog">
+                                <h3 class="direction__title">Плановое обследование</h3>
+                                <p class="direction__text">Выявление состояния здоровья</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/hand-pill.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                            <article class="direction" data-direction="lor">
+                                <h3 class="direction__title">Подготовка
+                                    к операции</h3>
+                                <p class="direction__text letter">Измерение показателей, исследования</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/patient.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                            <article class="direction" data-direction="lor">
+                                <h3 class="direction__title">Контроль за здоровьем</h3>
+                                <p class="direction__text">Комплексная оценка состояния здоровья</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/stethoscope.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                            <article class="direction" data-direction="lor">
+                                <h3 class="direction__title">Инъекции,
+                                    инфузии</h3>
+                                <p class="direction__text letter">Внутримышечно, внутривенно, подкожно</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/injection.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                        </div>
+                        <div class="hospital-box__right">
+                            <img class="hospital-box__right-image" src="/image/Прямоугольник 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hospital-middle">
+                        <img class="hospital__image" src="/image/perchatki.png" alt="">
+                        <div class="hospital-middle__info">
+                            <p class="hospital-middle__info-text"><span style="font-weight: 700;">Дневной
+                                    стационар в Нижневартовске</span> — это
+                                удобный формат лечения без необходимости круглосуточного пребывания в больнице.</p>
+                            <div class="hospital-middle__info-block">
+                                <div class="hospital-middle__info-step">
+                                    <h2 class="hospital-middle__info-title">шаг 1</h2>
+                                    <p class="hospital-middle__info-description">получаете
+                                        профессиональную<br>медицинскую
+                                        помощь.</p>
+                                </div>
+                                <div class="hospital-middle__image">
+                                    <img class="hospital__image" src="/image/line.png" alt="">
+                                </div>
+                                <div class="hospital-middle__info-step">
+                                    <h2 class="hospital-middle__info-title">шаг 2</h2>
+                                    <p class="hospital-middle__info-description">возвращаетесь домой<br>в тот же день.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hospital-bottom">
+                        <div class="hospital-bottom__up">
+                            <h2 class="hospital-bottom-title">Какие процедуры проводятся?</h2>
+                            <ul class="hospital-bottom-text">
+                                <li>Внутривенные капельные и струйные вливания лекарственных препаратов.</li>
+                                <li>Внутримышечные и подкожные инъекции.</li>
+                                <li>Комплексная диагностика и мониторинг состояния здоровья.</li>
+                                <li>Индивидуальные программы лечения и реабилитации.​</li>
+                            </ul>
+                        </div>
+                        <div class="hospital-bottom__down">
+                            <h2 class="hospital-bottom-title black">Почему выбирают нас?​</h2>
+                            <ul class="hospital-bottom-text black">
+                                <li>Опытные врачи и внимательный персонал.</li>
+                                <li>Современное оборудование и комфортные условия.</li>
+                                <li>Гибкий график посещений, удобный для работающих пациентов.</li>
+                                <li>Индивидуальный подход к каждому пациенту.​​</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- АНАЛИЗЫ -->
+            <section class="tab-content" id="tests">
+                <div class="tests" data-tab="tests">
+                    <div class="tests-page">
+                        <div class="tests-page__top">
+                            <p class="tests-page__top-text">Медицинский Центр "Здоровье", Клиника №1 <br> является
+                                партнером медицинской лаборатории KDL.</p>
+                            <div class="tests-page__top-button">забор крови бесплатно</div>
+                        </div>
+                        <div class="tests-page__price">
+                            <div class="tests-page__price-top">
+                                <h2 class="tests-page__price-name">наименование</h2>
+                                <div class="tests-page__price-right">
+                                    <h2 class="tests-page__price-name tests-page__price-name--deadline">срок</h2>
+                                    <h2 class="tests-page__price-name">Стоимость</h2>
+                                </div>
+                            </div>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Клинический анализ крови без лейкоцитарной формулы
+                                    (венозная кровь)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">225 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">биохимический анализ крови, базовый</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1690 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Поверхностный антиген вируса гепатита В (австралийский
+                                    антиген, HbsAG)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">350 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Антитела к вирусу гепатита с, сум. (Anti-hcv)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">540 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Микрореакция на сифилис качественно (RPR)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">295 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Коагулограмма, скрининг (АЧТВ; Протромбин (время, по
+                                    квику, МНО);<br>тромбиновое время; фибриноген)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1045 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Группа крови + резус-фактор</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">635 рублей</h3>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">тиреотропный гормон (ттг)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">320 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Тироксин свободный (т4 свободный)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">460 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">трийодтиронин свободный (т3 свободный)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">550 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">антитела к микросомальной тиреопероксидазе (анти-тпо)
+                                </p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">540 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">25-oh витамин d, ихла, суммарный (кальциферол)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1495 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">холестерин общий</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">1 день</h3>
+                                    <h3 class="tests-page__price-elaboration">250 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">простатоспецифический антиген (пса) общий</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">510 рублей</h3>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="tests-page__bottom">
+                            <h1 class="tests-page__bottom-title">я не нашел анализ</h1>
+                            <p class="tests-page__bottom-text">Если вы не нашли необходимые анализы, то обратитесь к
+                                администратору или позвоните для
+                                уточнения, также Вы можете самостоятельно посмотреть возможность сдачи анализа на
+                                официальном сайте KDL.</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="tests-page__bottom-img" src="/image/image 603.png" alt="">
+            </section>
+
+        </section>
+        <img class="block-dna__up" src="/image/днк1 1.png" alt="">
+        <img class="block-dna__down" src="/image/днк1 1.png" alt="">
+    </section>
+
+    <!-- FOOTER -->
+    <section class="bottom center">
+        <footer class="footer bufer">
+            <a class="footer-logo" href="/index.html">
+                <img src="./image/logo2.svg" alt="" />
+            </a>
+            <div class="footer-media">
+                <div class="footer-left">
+                    <a class="footer-left__link" href="./aboutClinic.html">О КЛИНИКЕ</a>
+                    <a class="footer-left__link" href="/service.html">УСЛУГИ</a>
+                    <a class="footer-left__link" href="#">ВРАЧИ</a>
+                    <a class="footer-left__link" href="/contacts.html">КОНТАКТЫ</a>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center__email">
+                        <img class="footer-center__email-img" src="/image/Mail.png" alt="" />
+                        <a class="footer-center__email-text" href="mailto:mrt-nv1@mail.ru">mrt-nv1@mail.ru</a>
+                    </div>
+                    <button class="footer-center__button">ОНЛАЙН ЗАПИСЬ</button>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right__box">
+                        <img class="footer-right__box-img" src="/image/Place Marker.png" alt="" />
+                        <p class="footer-right__box-text">
+                            г.Нижневартовск,<br>
+                            ул.Северная,20а
+                        </p>
+                    </div>
+                    <div class="footer-right__box">
+                        <img class="footer-right__box-img" src="/image/Phone.png" alt="" />
+                        <a class="footer-right__box-phone" href="tel:+79003900559">8 (900) 3900-559</a>
+                    </div>
+                    <div class="footer-right__box">
+                        <img class="footer-right__box-img" src="/image/Phone.png" alt="" />
+                        <a class="footer-right__box-phone" href="tel:+73466406604">8 (3466) 406-604</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-center__text">ООО "Медицинский центр Здоровье"</p>
+            <p class="footer-center__text">Лицензия № ЛО-86-01-002817 от 25.08.2017г.</p>
+        </footer>
+    </section>
+
+    <script src="./re.js"></script>
+    <script src="./tabService.js"></script>
+</body>
+
+</html>

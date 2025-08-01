@@ -1,160 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Услуги</title>
+    <link rel="shortcut icon" href="./image/logo2.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header center">
-        <div class="header__menu">
-            <a href="./index.html"><img class="header__logo" src="./image/logo2.svg" alt="клинника №1"></a>
-            <div class="header__navigate">
-                <a class="#" href="./aboutClinic.html"><h1 class="header__linkAbout">о клинике</h1></a>
-                <a class="#" href="./service.html"><h2 class="header__link">услуги</h2></a>
-                <a class="#" href="#"><h2 class="header__link">цены</h2></a>
-                <a class="#" href="#"><h2 class="header__link">врачи</h2></a>
-                <a class="#" href="#"><h2 class="header__link">контакты</h2></a>
-                
+    <!-- ЗАЯВКА -->
+    <section class="application">
+        <div class="application-center">
+            <form class="form" action="#">
+                <div class="form-top">
+                    <h1 class="form-top__title">Заказать обратный звонок</h1>
+                    <p class="form-top__text">Заполните форму и наш администратор свяжется с вами для записи в ближайшее
+                        время</p>
+                </div>
+                <div class="form-inputs">
+                    <input class="form-inputs__item" type="text" placeholder="Ваше имя">
+                    <input class="form-inputs__item" type="text" placeholder="+7 (999) 555-55-55">
+                    <input class="form-inputs__item" type="text" placeholder="Какой нужен врач/услуга">
+                    <button class="form-inputs__button">Отправить данные</button>
+                </div>
+                <div class="form-checkbox">
+                    <input class="form-checkbox__marker" type="checkbox" id="personal-data">
+                    <label class="form-checkbox__label" for="personal-data">Соглашаюсь на обработку персональных
+                        данных</label>
+                </div>
+            </form>
+        </div>
+        <div class="complate">
+            <div class="complate-image">
+                <svg width="72.792969" height="54.621094" viewBox="0 0 72.793 54.6211" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Слияние"
+                        d="M31.1758 45.957L67.4609 1.11328C68.5039 -0.175781 70.3945 -0.375 71.6836 0.667969C72.9688 1.71094 73.168 3.59766 72.125 4.88672L32.7852 53.5078C31.9492 54.543 30.5703 54.875 29.3906 54.4258C28.9883 54.3242 28.6016 54.1367 28.2539 53.8594L1.125 32.0977C-0.167969 31.0625 -0.375 29.1719 0.660156 27.8828C1.69531 26.5898 3.58594 26.3828 4.87891 27.418L28.3711 46.2617C29.2305 46.9492 30.4844 46.8164 31.1758 45.957Z"
+                        clip-rule="evenodd" fill="#75DB47" fill-opacity="1.000000" fill-rule="evenodd" />
+                </svg>
             </div>
-            <div class="header__timeWork">
-                <p class="header__text">пн-вс 8:00-20:00</p>
-                <h4 class="header__phone">8 (3466) 406-603</h4>
+            <div class="complate-box">
+                <h1 class="complate-box__title">Ваша заявка принята</h1>
+                <p class="complate-box__phrase">Спасибо! Скоро свяжемся с Вами!</p>
             </div>
         </div>
-     </header>
+    </section>
 
-<div class="tab" id="tab-1">
-  <div class="tab-nav">
-    <h1 class="service-title center">УСЛУГИ</h1>
-    <button type="button" class="tab-btn tab-btn-active" data-target-id="0">все услуги</button>
-    <button type="button" class="tab-btn" data-target-id="1">анализы</button>
-    <button type="button" class="tab-btn" data-target-id="2">дневной стационар</button>
-    <!--<input type="text" id="searchInput" placeholder="поиск услуги" class="tab-search">-->
-  </div>
-    <div class="tab-content">
-        <div class="tab-pane tab-pane-show" data-id="0">
-            <div class="tab-content center">
-                <div class="tab__form">
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
+    <!-- HEADER -->
+    <section class="center">
+        <header class="header bufer">
+            <div class="navigate">
+                <input type="checkbox" name="header" id="nav">
+                <label class="navigate-button" for="nav">
+                    <svg class="svg-burger" viewBox="0 0 28 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <rect id="фрейм 22" width="25.000000" height="16.000000"
+                            transform="translate(1.500000 1.500000)" fill="#FFFFFF" fill-opacity="0" />
+                        <path id="Линия 2" d="M1.5 17.5L26.5 17.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                        <path id="Линия 2" d="M1.5 9.5L26.5 9.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                        <path id="Линия 2" d="M1.5 1.5L26.5 1.5" stroke="#FFFFFF" stroke-opacity="1.000000"
+                            stroke-width="3.000000" stroke-linecap="round" />
+                    </svg>
+                </label>
+                <div class="navigate-button__block navigate-button__block--nav" id="nav-block">
+                    <a class="navigate-button__block-link" href="/aboutClinic.html">о клинике</a>
+                    <a class="navigate-button__block-link" href="/service.html">услуги</a>
+                    <a class="navigate-button__block-link" href="/doctors.html">врачи</a>
+                    <a class="navigate-button__block-link" href="/contacts.html">контакты</a>
+                </div>
+            </div>
+            <a href="/index.html">
+                <img class="header-logo" src="./image/logo2.svg" alt="клинника №1" />
+                <img class="header-logo__textless" src="./image/logo2.png" alt="клинника №1" />
+            </a>
+            <nav class="header-navigate">
+                <a class="header-navigate__link" href="./aboutClinic.html">о клинике</a>
+                <a class="header-navigate__link" href="./service.html">услуги</a>
+                <a class="header-navigate__link" href="./doctors.html">врачи</a>
+                <a class="header-navigate__link" href="/contacts.html">контакты</a>
+            </nav>
+            <div class="header-timeWork">
+                <p class="header-timeWork__text">пн-вс 8:00-20:00</p>
+                <a href="tel:+73466406603" class="header-timeWork__phone">8 (3466) 406-603</a>
+            </div>
+            <div class="navigate">
+                <input type="checkbox" name="header" id="phone">
+                <label class="navigate-button" for="phone">
+                    <svg class="svg-phone" viewBox="0 0 20.125 19.2578" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="path"
+                            d="M19.44 14.58L15.95 12.31C15.62 12.09 15.26 12 14.86 12.06C14.46 12.11 14.14 12.28 13.89 12.58L12.89 13.73C12.76 13.88 12.6 13.96 12.4 14C12.2 14.04 12.01 14.01 11.84 13.92C8.57 12.22 6.52 9.43 5.58 7.92C5.47 7.75 5.44 7.56 5.48 7.35C5.53 7.14 5.64 6.99 5.82 6.87L6.9 6.14C7.07 6.03 7.2 5.89 7.32 5.72C7.42 5.55 7.5 5.37 7.53 5.18C7.57 4.99 7.56 4.79 7.51 4.6C7.47 4.41 7.39 4.24 7.27 4.07L4.73 0.63C4.61 0.46 4.46 0.32 4.29 0.22C4.11 0.11 3.92 0.04 3.71 0.01C3.5 -0.02 3.3 -0.01 3.1 0.04C2.89 0.09 2.71 0.17 2.54 0.29L0.89 1.47C0.39 1.82 0.1 2.28 0.03 2.87C-0.49 7.52 4.44 12.34 4.62 12.52C9.52 18.28 13.98 19.25 16.41 19.25C16.78 19.25 17.14 19.23 17.51 19.17C18.25 19.07 18.79 18.71 19.12 18.06L19.96 16.47C20.13 16.14 20.17 15.79 20.07 15.43C19.97 15.07 19.76 14.79 19.44 14.58Z"
+                            fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </label>
+                <div class="navigate-button__block navigate-button__block--phone" id="phone-block">
+                    <p class="navigate-button__block-link navigate-button__block-link--low">пн-вс 8:00-20:00</p>
+                    <a class="navigate-button__block-link" href="tel:+79003900559">8 (900) 3900-559</a>
+                    <a class="navigate-button__block-link" href="tel:+73466406603">8 (3466) 406-603</a>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- РАБОЧАЯ ОБЛАСТЬ -->
+    <section class="block center">
+        <section class="page-doctors bufer">
+
+            <!-- НАВИГАЦИЯ -->
+            <div class="tab-menu">
+                <h1 class="tab-menu__title">услуги</h1>
+                <div class="tab">
+                    <input checked type="radio" name="tab-sets" id="tab-service" value="УСЛУГИ">
+                    <label class="tab__label" for="tab-service">все услуги</label>
+                    <input type="radio" name="tab-sets" id="tab-tests" value="АНАЛИЗЫ">
+                    <label class="tab__label" for="tab-tests">анализы</label>
+                    <input type="radio" name="tab-sets" id="tab-hospital" value="ДНЕВНОЙ СТАЦИОНАР">
+                    <label class="tab__label" for="tab-hospital">дневной стационар</label>
+                    <input class="tab__search" type="search" placeholder="поиск врача" id="searchInput">
+                </div>
+            </div>
+
+            <!-- УСЛУГИ -->
+            <section class="tab-content" id="service">
+                <div class="tests" data-tab="tests">
+                    <div class="tests-page">
+                        <div class="direction-box__service" data-tab="doctors">
+                            <article class="direction" data-direction="diagnostika">
+                                <img class="direction__image" src="./image/DIRECTIONS/uzi machine.png" alt="">
                                 <h3 class="direction__title">Диагностика</h3>
                                 <p class="direction__text">МРТ, УЗИ</p>
+                                <div class="direction__back"></div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="direction" data-direction="procedur">
+                                <img class="direction__image" src="./image/DIRECTIONS/hospital-bed.png" alt="">
+                                <h3 class="direction__title">Процедурная</h3>
+                                <p class="direction__text">Капельницы,<br>инъекции</p>
+                                <div class="direction__back"></div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="direction" data-direction="vmeshatelstva">
+                                <img class="direction__image" src="./image/DIRECTIONS/syringe.png" alt="">
+                                <h3 class="direction__title">Вмешательства</h3>
+                                <p class="direction__text">Лезерные операции, пункции</p>
+                                <div class="direction__back"></div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="direction" data-direction="analis">
+                                <img class="direction__image" src="./image/DIRECTIONS/blood.png" alt="">
+                                <h3 class="direction__title">Анализы</h3>
+                                <p class="direction__text">Диагностика и контроль состояния здоровья</p>
+                                <div class="direction__back"></div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <div class="cub-up__left"></div>
+                            <div class="cub-down__left"></div>
+                            <div class="cub-up__right"></div>
+                            <div class="cub-down__right"></div>
+                            <div class="direction-box__service-front">
+                                <a class="direction-box__service-buttons" href="/contacts.html">записаться на прием</a>
+                            </div>
+                        </div>
+                        <div class="tests-page__top">
+                            <div class="tests-page__board-title">
+                                <h2 class="hospital-bottom-title black">основные анализы</h2>
+                                <p class="tests-page__board-description">С начала 2025 года Медицинский Центр
+                                    "Здоровье", Клиника
+                                    №1 является партнером медицинской лаборатории KDL.</p>
+                            </div>
+                            <div class="tests-page__board">
+                                <div class="tests-page__board-box">
+                                    <svg width="61.062500" height="57.542969" viewBox="0 0 61.0625 57.543" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                            Created with Pixso.
+                                        </desc>
+                                        <defs />
+                                        <path id="path"
+                                            d="M30.53 0C21.08 0 13.2 6.76 11.32 15.78C4.86 17.12 0 22.92 0 29.87C0 37.49 5.83 43.72 13.21 44.23C13.12 43.51 13.08 42.78 13.08 42.04C13.08 32.26 20.89 24.34 30.53 24.34C40.16 24.34 47.98 32.26 47.98 42.04C47.98 42.78 47.93 43.51 47.84 44.23C55.23 43.72 61.06 37.49 61.06 29.87C61.06 22.92 56.19 17.12 49.73 15.78C47.85 6.76 39.97 0 30.53 0Z"
+                                            fill="#75DB47" fill-opacity="1.000000" fill-rule="nonzero" />
+                                        <path id="path"
+                                            d="M30.53 26.55C22.1 26.55 15.26 33.49 15.26 42.05C15.26 50.6 22.1 57.54 30.53 57.54C38.96 57.54 45.79 50.6 45.79 42.05C45.79 33.49 38.96 26.55 30.53 26.55ZM30.53 35.41C31.73 35.41 32.71 36.4 32.71 37.62L32.71 42.05C32.71 43.27 31.73 44.26 30.53 44.26C29.32 44.26 28.35 43.27 28.35 42.05L28.35 37.62C28.35 36.4 29.32 35.41 30.53 35.41ZM32.71 48.68C32.71 49.91 31.73 50.9 30.53 50.9C29.32 50.9 28.35 49.91 28.35 48.68C28.35 47.46 29.32 46.47 30.53 46.47C31.73 46.47 32.71 47.46 32.71 48.68Z"
+                                            fill="#75DB47" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <p class="tests-page__board-text">Если вы не нашли необходимые анализы, то обратитесь к
+                                    администратору или позвоните
+                                    для уточнения.</p>
+                            </div>
+                        </div>
+                        <div class="tests-page__price">
+                            <div class="tests-page__price-top">
+                                <h2 class="tests-page__price-name">наименование</h2>
+                                <div class="tests-page__price-right">
+                                    <h2 class="tests-page__price-name">срок</h2>
+                                    <h2 class="tests-page__price-name">Стоимость</h2>
+                                </div>
+                            </div>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Клинический анализ крови без лейкоцитарной формулы
+                                    (венозная кровь)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">225 рублей</h3>
+                                </div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">биохимический анализ крови, базовый</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1690 рублей</h3>
+                                </div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Поверхностный антиген вируса гепатита В (австралийский
+                                    антиген, HbsAG)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">350 рублей</h3>
+                                </div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Антитела к вирусу гепатита с, сум. (Anti-hcv)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">540 рублей</h3>
+                                </div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Микрореакция на сифилис качественно (RPR)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">295 рублей</h3>
+                                </div>
                             </article>
-                            <article class="direction">
-                                <img class="direction__image" src="./image/Ear.png" alt="">
-                                <h3 class="direction__title">Методы лечения</h3>
-                                <p class="direction__text">Процедурные, оперблок, иглорефлексотерапия</p>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Коагулограмма, скрининг (АЧТВ; Протромбин (время, по
+                                    квику, МНО);<br>тромбиновое время; фибриноген)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1045 рублей</h3>
+                                </div>
                             </article>
-                </div>    
-            </div>  
-            <button class="tab__sing">записать на прием онлайн</button>         
-        </div>
-        <div class="tab-pane" data-id="1">
-            <div class="tab__form">
-                <h1>тут должно быть что то </h1>
-            </div>
-             
-        </div>
-        <div class="tab-pane" data-id="2">
-            <div class="tab__form">
-                <h1>тут должно быть что то </h1>
-            </div>
-             
-        </div>
-  </div>
-</div>
-<div class="basicTests center">
-    <h1 class="service-title center">ОСНОВНЫЕ АНАЛИЗЫ</h1>
-    <p>С начала 2025 года Медицинский Центр "Здоровье", Клиника №1 является партнером медицинской лаборатории KDL.</p>
-</div>
-
-<footer class="footer center">
-    <img class="footer__logo center" src="./image/logo2.svg" alt="">
-    <div class="footer__form center">
-        <div class="footer__left">
-                <div class="footer__menu">
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">О КЛИНИКЕ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">УСЛУГИ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">ЦЕНЫ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">ВРАЧИ</h4></a>
-                    <a class="footer__menu-link" href=""><h4 class="footer__menu-title">КОНТАКТЫ</h4></a>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Группа крови + резус-фактор</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">635 рублей</h3>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">тиреотропный гормон (ттг)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">320 рублей</h3>
+                                </div>
+                            </article>
+                        </div>
+                        <button class="direction-box__service-buttons" onclick="onepAnalys()">смотреть
+                            все анализы</button>
+                    </div>
                 </div>
-        </div>
-        <div class="footer__center">
-            <div class="footer__center-form">
-                <img src="" alt="">
-                <p>mrt-nv1@mail.ru</p>
+            </section>
+
+            <!-- ДНЕВНОЙ СТАЦИОНАР -->
+            <section class="tab-content" id="hospital">
+                <h2 class="doctors-page__list-inscription">подходит, если вам необходимо:</h2>
+                <div class="hospital" data-tab="hospital">
+                    <div class="hospital-box">
+                        <div class="hospital-box__left">
+                            <article class="direction" data-direction="gastroenterolog">
+                                <h3 class="direction__title">Плановое обследование</h3>
+                                <p class="direction__text">Выявление состояния здоровья</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/hand-pill.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                            <article class="direction" data-direction="lor">
+                                <h3 class="direction__title">Подготовка
+                                    к операции</h3>
+                                <p class="direction__text letter">Измерение показателей, исследования</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/patient.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                            <article class="direction" data-direction="lor">
+                                <h3 class="direction__title">Контроль за здоровьем</h3>
+                                <p class="direction__text">Комплексная оценка состояния здоровья</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/stethoscope.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                            <article class="direction" data-direction="lor">
+                                <h3 class="direction__title">Инъекции,
+                                    инфузии</h3>
+                                <p class="direction__text letter">Внутримышечно, внутривенно, подкожно</p>
+                                <img class="direction__image" src="./image/DIRECTIONS/injection.png" alt="">
+                                <div class="direction__back"></div>
+                            </article>
+                        </div>
+                        <div class="hospital-box__right">
+                            <img class="hospital-box__right-image" src="/image/Прямоугольник 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hospital-middle">
+                        <img class="hospital__image" src="/image/perchatki.png" alt="">
+                        <div class="hospital-middle__info">
+                            <p class="hospital-middle__info-text"><span style="font-weight: 700;">Дневной
+                                    стационар в Нижневартовске</span> — это
+                                удобный формат лечения без необходимости круглосуточного пребывания в больнице.</p>
+                            <div class="hospital-middle__info-block">
+                                <div class="hospital-middle__info-step">
+                                    <h2 class="hospital-middle__info-title">шаг 1</h2>
+                                    <p class="hospital-middle__info-description">получаете
+                                        профессиональную<br>медицинскую
+                                        помощь.</p>
+                                </div>
+                                <div class="hospital-middle__image">
+                                    <img class="hospital__image" src="/image/line.png" alt="">
+                                </div>
+                                <div class="hospital-middle__info-step">
+                                    <h2 class="hospital-middle__info-title">шаг 2</h2>
+                                    <p class="hospital-middle__info-description">возвращаетесь домой<br>в тот же день.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hospital-bottom">
+                        <div class="hospital-bottom__up">
+                            <h2 class="hospital-bottom-title">Какие процедуры проводятся?</h2>
+                            <ul class="hospital-bottom-text">
+                                <li>Внутривенные капельные и струйные вливания лекарственных препаратов.</li>
+                                <li>Внутримышечные и подкожные инъекции.</li>
+                                <li>Комплексная диагностика и мониторинг состояния здоровья.</li>
+                                <li>Индивидуальные программы лечения и реабилитации.​</li>
+                            </ul>
+                        </div>
+                        <div class="hospital-bottom__down">
+                            <h2 class="hospital-bottom-title black">Почему выбирают нас?​</h2>
+                            <ul class="hospital-bottom-text black">
+                                <li>Опытные врачи и внимательный персонал.</li>
+                                <li>Современное оборудование и комфортные условия.</li>
+                                <li>Гибкий график посещений, удобный для работающих пациентов.</li>
+                                <li>Индивидуальный подход к каждому пациенту.​​</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- АНАЛИЗЫ -->
+            <section class="tab-content" id="tests">
+                <div class="tests" data-tab="tests">
+                    <div class="tests-page">
+                        <div class="tests-page__top">
+                            <p class="tests-page__top-text">Медицинский Центр "Здоровье", Клиника №1 <br> является
+                                партнером медицинской лаборатории KDL.</p>
+                            <div class="tests-page__top-button">забор крови бесплатно</div>
+                        </div>
+                        <div class="tests-page__price">
+                            <div class="tests-page__price-top">
+                                <h2 class="tests-page__price-name">наименование</h2>
+                                <div class="tests-page__price-right">
+                                    <h2 class="tests-page__price-name tests-page__price-name--deadline">срок</h2>
+                                    <h2 class="tests-page__price-name">Стоимость</h2>
+                                </div>
+                            </div>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Клинический анализ крови без лейкоцитарной формулы
+                                    (венозная кровь)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">225 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">биохимический анализ крови, базовый</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1690 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Поверхностный антиген вируса гепатита В (австралийский
+                                    антиген, HbsAG)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">350 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Антитела к вирусу гепатита с, сум. (Anti-hcv)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">540 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Микрореакция на сифилис качественно (RPR)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">295 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Коагулограмма, скрининг (АЧТВ; Протромбин (время, по
+                                    квику, МНО);<br>тромбиновое время; фибриноген)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1045 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Группа крови + резус-фактор</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">635 рублей</h3>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">тиреотропный гормон (ттг)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">320 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">Тироксин свободный (т4 свободный)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">460 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">трийодтиронин свободный (т3 свободный)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">550 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">антитела к микросомальной тиреопероксидазе (анти-тпо)
+                                </p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">540 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">25-oh витамин d, ихла, суммарный (кальциферол)</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">1495 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">холестерин общий</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">1 день</h3>
+                                    <h3 class="tests-page__price-elaboration">250 рублей</h3>
+                                </div>
+                            </article>
+                            <article class="tests-page__price-item">
+                                <p class="tests-page__price-name">простатоспецифический антиген (пса) общий</p>
+                                <div class="tests-page__price-right">
+                                    <h3 class="tests-page__price-elaboration">2 дня</h3>
+                                    <h3 class="tests-page__price-elaboration">510 рублей</h3>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="tests-page__bottom">
+                            <h1 class="tests-page__bottom-title">я не нашел анализ</h1>
+                            <p class="tests-page__bottom-text">Если вы не нашли необходимые анализы, то обратитесь к
+                                администратору или позвоните для
+                                уточнения, также Вы можете самостоятельно посмотреть возможность сдачи анализа на
+                                официальном сайте KDL.</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="tests-page__bottom-img" src="/image/image 603.png" alt="">
+            </section>
+
+            <!-- ДИАГНОСТИКА -->
+            <section class="doctors-content" data-id="diagnostika">
+                <p class="doctors-name" style="display: none;">ДИАГНОСТИКА</p>
+                <div class="panel">
+                    <div class="panel-container">
+                        <h1 class="panel-container__title">Магнитно-резонансная томография (мрт)</h1>
+                        <p class="panel-container__text">Томографический метод исследования внутренних органов и тканей
+                            с использованием физического
+                            явления ядерного магнитного резонанса — метод основан на измерении МР-срез
+                            головыэлектромагнитного отклика ядер атомов водорода на возбуждение их определённой
+                            комбинацией электромагнитных волн в постоянном магнитном поле высокой напряжённости.</p>
+                        <a class="panel-container__link podrobnee" href="/doctors.html" data-details="mrt">ПОДРОБНЕЕ</a>
+                    </div>
+                    <div class="panel-container">
+                        <h1 class="panel-container__title">ультразвуковое исследование (УЗИ)</h1>
+                        <p class="panel-container__text">метод диагностики, использующий высокочастотные звуковые волны
+                            для создания изображений
+                            внутренних органов и тканей. Ультразвук направляется на исследуемую область, и датчик
+                            улавливает отраженные волны, которые компьютер преобразует в изображение на экране. Это
+                            безопасный и неинвазивный метод, широко применяемый для диагностики различных заболеваний.
+                        </p>
+                        <a class="panel-container__link podrobnee" href="/doctors.html" data-details="uzi">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ПРОЦЕДУРНАЯ -->
+            <section class="doctors-content" data-id="procedur">
+                <p class="doctors-name" style="display: none;">процедурная</p>
+                <div class="panel">
+                    <div class="tests-page__price tests-page__price--mini">
+                        <div class="tests-page__price-top">
+                            <h2 class="tests-page__price-name">наименование</h2>
+                            <h2 class="tests-page__price-name">Стоимость</h2>
+                        </div>
+                        <article class="tests-page__price-item">
+                            <p class="tests-page__price-name">внутримышечная инъекция</p>
+                            <h3 class="tests-page__price-elaboration">250 рублей</h3>
+                        </article>
+                        <article class="tests-page__price-item">
+                            <p class="tests-page__price-name">подкожная инъекция</p>
+                            <h3 class="tests-page__price-elaboration">250 рублей</h3>
+                        </article>
+                        <article class="tests-page__price-item">
+                            <p class="tests-page__price-name">внутривенная инъекция</p>
+                            <h3 class="tests-page__price-elaboration">350 рублей</h3>
+                        </article>
+                        <article class="tests-page__price-item">
+                            <p class="tests-page__price-name">капельница (до 60 мин)</p>
+                            <h3 class="tests-page__price-elaboration">1500 рублей</h3>
+                        </article>
+                        <h4 class="tests-page__price-ps">*взрослые и дети с 6 лет</h4>
+                    </div>
+                    <div class="panel-container panel-container--mini">
+                        <div>
+                            <h2 class="doctors-page__list-inscription">информация</h2>
+                            <h1 class="panel-container__title">об услуге:</h1>
+                        </div>
+                        <ul class="panel-container__list">
+                            <li>Все процедуры проводятся по показаниям врача и при наличии направления;</li>
+                            <li>Срок действия направления 15 календарных дней;</li>
+                            <li>Лекарственный препарат в упаковке предоставляется пациентом;</li>
+                        </ul>
+                        <a class="panel-container__link" href="">ЗАПИСАТЬСЯ</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ВМЕШАТЕЛЬСТВА -->
+            <section class="doctors-content" data-id="vmeshatelstva">
+                <p class="doctors-name" style="display: none;">ВМЕШАТЕЛЬСТВА</p>
+                <h2 class="doctors-page__list-inscription">ВЫПОЛНЯЕМ:</h2>
+                <div class="panel">
+                    <div class="panel-container">
+                        <ul class="panel-container__list">
+                            <li>Пункцию гематомы, внутрисуставную инъекцию;</li>
+                            <li>Пункцию суставов с введением лекарственных препаратов;</li>
+                            <li>Лечебно-диагностическую пункцию для гистологического исследования;</li>
+                            <li>Новокаиновые блокады;</li>
+                            <li>Чистку ногтевого ложа, операции при вросшем ногте;</li>
+                            <li>Удаление мозолей (натоптышей);</li>
+                            <li>Первичную хирургическую обработку ран, наложение гипсовых повязок, наложение и снятие
+                                швов,
+                                иссечение грубых рубцов;</li>
+                            <li>Минифлебэктомию варикозно трансформированных вен;</li>
+                            <li>Склеротерапия варикозно трансформированных вен и микросклеротерапия телеангиоэктазий.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-container">
+                        <h1 class="panel-container__title panel-container__title--color">лазерные операции</h1>
+                        <ul class="panel-container__list">
+                            <li>Лазерные операции по проктологии (лазерная геморроидопластика);</li>
+                            <li>Лазерные операции по онкологии (удаление лазером родинок, бородавок, папиллом и
+                                новообразований);</li>
+                            <li>Эндовазальная (эндовенозная) лазерная коагуляция (облитерация) варикозных вен (ЭВЛК,
+                                ЭВЛО).</li>
+                        </ul>
+                        <a class="panel-container__link" href="">ЗАПИСАТЬСЯ</a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <img class="block-dna__up" src="/image/днк1 1.png" alt="">
+        <img class="block-dna__down" src="/image/днк1 1.png" alt="">
+    </section>
+
+    <!-- FOOTER -->
+    <section class="bottom center">
+        <footer class="footer bufer">
+            <a class="footer-logo" href="/index.html">
+                <img src="./image/logo2.svg" alt="" />
+            </a>
+            <div class="footer-media">
+                <div class="footer-left">
+                    <a class="footer-left__link" href="./aboutClinic.html">О КЛИНИКЕ</a>
+                    <a class="footer-left__link" href="#">УСЛУГИ</a>
+                    <a class="footer-left__link" href="/doctors.html">ВРАЧИ</a>
+                    <a class="footer-left__link" href="/contacts.html">КОНТАКТЫ</a>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center__email">
+                        <img class="footer-center__email-img" src="/image/Mail.png" alt="" />
+                        <a class="footer-center__email-text" href="mailto:mrt-nv1@mail.ru">mrt-nv1@mail.ru</a>
+                    </div>
+                    <button class="footer-center__button">ОНЛАЙН ЗАПИСЬ</button>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right__box">
+                        <img src="/image/Place Marker.png" alt="" />
+                        <p class="footer-right__box-text">
+                            г.Нижневартовск,<br>
+                            ул.Северная,20а
+                        </p>
+                    </div>
+                    <div class="footer-right__box">
+                        <img class="footer-right__box-img" src="/image/Phone.png" alt="" />
+                        <a class="footer-right__box-phone" href="tel:+79003900559">8 (900) 3900-559</a>
+                    </div>
+                    <div class="footer-right__box">
+                        <img class="footer-right__box-img" src="/image/Phone.png" alt="" />
+                        <a class="footer-right__box-phone" href="tel:+73466406604">8 (3466) 406-604</a>
+                    </div>
+                </div>
             </div>
-            <h4>ОНЛАЙН ЗАПИСЬ</h4>
-        </div>
-        <div class="footer__right">
-            <div class="footer__right-navigate">
-                <img src="" alt="">
-                <p>г.Нижневартовск,<br> ул.Северная,20а</p>
-            </div>
-            <div class="footer__right-phone">
-                <img src="" alt="">
-                <p>9(900)3900-559</p>
-            </div>
-            <div class="footer__right-phone">
-                <img src="" alt="">
-                <p>9(3466)406-604</p>
-            </div>
-        </div>
-    </div>
-    <div class="footer__bottom">
-        <div class="footer__bottom-nameCompany">
-            <p>ООО "Медицинский центр Здоровье"</p>
-        </div>
-        <div class="footer__bottom-licenzion">
-            <p>Лицензия № ЛО-86-01-002817 от 25.08.2017г.</p>
-        </div>
-    </div>
-</footer>
+            <p class="footer-center__text">ООО "Медицинский центр Здоровье"</p>
+            <p class="footer-center__text">Лицензия № ЛО-86-01-002817 от 25.08.2017г.</p>
+        </footer>
+    </section>
+
+    <!-- JS -->
+    <script src="./re.js"></script>
     <script src="./tabService.js"></script>
 </body>
 
