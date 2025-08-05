@@ -127,22 +127,22 @@
             </div>
 
             <!-- ФОРМА -->
-            <form class="form" action="#">
+            <form id="callbackForm" class="form">
                 <div class="form-top">
                     <h1 class="form-top__title">Заказать обратный звонок</h1>
-                    <p class="form-top__text">Заполните форму и наш администратор свяжется с вами для записи в ближайшее
-                        время</p>
+                    <p class="form-top__text">Заполните форму и наш администратор свяжется с вами</p>
                 </div>
                 <div class="form-inputs">
-                    <input class="form-inputs__item" type="text" placeholder="Ваше имя">
-                    <input class="form-inputs__item" type="text" placeholder="+7 (999) 555-55-55">
-                    <input class="form-inputs__item" type="text" placeholder="Какой нужен врач/услуга">
-                    <button class="form-inputs__button">Отправить данные</button>
+                    <input name="name" class="form-inputs__item" type="text" placeholder="Ваше имя" required>
+                    <input name="phone" class="form-inputs__item" type="text" placeholder="+7 (999) 555-55-55" required>
+                    <input name="service" class="form-inputs__item" type="text" placeholder="Какой нужен врач/услуга" required>
+                    <button type="submit" class="form-inputs__button">Отправить данные</button>
                 </div>
                 <div class="form-checkbox">
-                    <input class="form-checkbox__marker" type="checkbox" id="personal-data">
-                    <label class="form-checkbox__label" for="personal-data">Соглашаюсь на обработку персональных
-                        данных</label>
+                    <input class="form-checkbox__marker" type="checkbox" id="personal-data" name="agree" required>
+                    <label class="form-checkbox__label" for="personal-data">
+                        Соглашаюсь на обработку персональных данных
+                    </label>
                 </div>
             </form>
         </section>
@@ -166,7 +166,7 @@
                         <img class="footer-center__email-img" src="/image/Mail.png" alt="" />
                         <a class="footer-center__email-text" href="mailto:mrt-nv1@mail.ru">mrt-nv1@mail.ru</a>
                     </div>
-                    <button class="footer-center__button">ОНЛАЙН ЗАПИСЬ</button>
+                    <a class="footer-center__button" href="#callbackForm">ОНЛАЙН ЗАПИСЬ</a>
                 </div>
                 <div class="footer-right">
                     <div class="footer-right__box">
