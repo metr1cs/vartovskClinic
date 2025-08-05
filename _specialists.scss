@@ -138,16 +138,18 @@
 
     &-title {
         color: rgb(63, 63, 63);
-        font-family: Montserrat;
         font-size: $fontSizeHuge;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 0%;
         text-align: left;
         text-transform: uppercase;
         margin-top: 128px;
     }
 
+}
+.white{
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 .specialist-container {
