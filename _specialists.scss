@@ -16,7 +16,6 @@
 
         &:hover{
             transform: scale(1.05);
-
         }
 
         &__photo {
@@ -91,6 +90,10 @@
                 font-weight: 700;
                 text-align: center;
                 border-radius: 30px;
+                transition: all 0.2s ease;
+                &:hover{
+                    transform: scale(1.06);
+                }
             }
 
             &-price {
@@ -117,6 +120,10 @@
                 border-radius: 30px;
                 border: none;
                 white-space: nowrap;
+                transition: all 0.2s ease;
+                &:hover{
+                    transform: scale(1.06);
+                }
             }
         }
     }

@@ -1789,6 +1789,10 @@
   font-weight: 700;
   text-align: center;
   border-radius: 30px;
+  transition: all 0.2s ease;
+}
+.specialist-cart__bottons-details:hover {
+  transform: scale(1.06);
 }
 .specialist-cart__bottons-price {
   width: 172px;
@@ -1813,6 +1817,10 @@
   border-radius: 30px;
   border: none;
   white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.specialist-cart__bottons-signup:hover {
+  transform: scale(1.06);
 }
 .specialist-box {
   display: flex;
