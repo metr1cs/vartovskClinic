@@ -643,18 +643,15 @@
 .hospital-box__left {
   display: grid;
   grid-template-columns: repeat(2, 189px);
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   row-gap: 64px;
 }
 .hospital-box__right-image {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: right center;
-     object-position: right center;
+  object-fit: contain;
+  object-position: right center;
 }
 .hospital-middle {
   margin-top: 50px;
@@ -802,8 +799,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   row-gap: 124px;
   justify-content: space-between;
 }
@@ -1158,7 +1154,6 @@
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .main-right__bottom {
@@ -1357,8 +1352,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, 189px);
-  -moz-column-gap: 52px;
-       column-gap: 52px;
+  column-gap: 52px;
   row-gap: 117px;
   padding: 100px 69px 76px 58px;
   background-color: rgba(220, 220, 220, 0.74);
@@ -1441,11 +1435,12 @@
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   padding: 26px 8px 10px 8px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
 }
 .direction:hover {
-  border: 1px solid rgb(0, 0, 0);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transform: scale(1.04);
 }
 .direction__image {
   height: 62px;
@@ -1462,16 +1457,6 @@
   font-weight: 300;
   line-height: normal;
   text-align: center;
-}
-.direction__back {
-  position: absolute;
-  width: 156px;
-  height: 193px;
-  border-radius: 30px;
-  background-color: rgba(136, 136, 136, 0.9);
-  top: 8px;
-  left: 17px;
-  z-index: -10;
 }
 .direction__link {
   grid-column: 1/-1;
@@ -1750,8 +1735,7 @@
 .specialist-cart__photo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .specialist-cart__name {
   color: #3F3F3F;
@@ -1904,6 +1888,12 @@
   }
   .specialist-cart__bottons-signup {
     width: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
   }
   .specialist-box {
     padding: 80px 0 0 0;
@@ -1959,7 +1949,6 @@
   color: #3F3F3F;
   background-color: #E8E8E8;
   border-radius: 30px;
-  width: -moz-fit-content;
   width: fit-content;
   height: 18px;
 }
@@ -2251,7 +2240,6 @@
   line-height: 11px;
   font-weight: 700;
   color: #727272;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .footer-center {
@@ -2416,10 +2404,6 @@
   font-weight: 700;
   line-height: 20px;
   padding: 9px 28px 9px 62px;
-}
-.tab__search::-moz-placeholder {
-  text-transform: uppercase;
-  color: rgb(232, 232, 232);
 }
 .tab__search::placeholder {
   text-transform: uppercase;
@@ -2682,8 +2666,7 @@ a {
 }
 
 .y > img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* Сохраняем пропорции изображения */
   height: auto;
   /* Высота должна меняться автоматически */
@@ -2708,8 +2691,8 @@ a {
 .rr {
   position: relative;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: -moz-fit-content;
+  object-fit: cover;
   height: fit-content;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
