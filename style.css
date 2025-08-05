@@ -841,6 +841,7 @@
   font-weight: 700;
   color: rgb(63, 63, 63);
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .doctors-page__list-title--color {
   color: rgb(117, 219, 71);
@@ -1719,6 +1720,10 @@
   border: 3px solid #EFEFEF;
   border-radius: 30px;
   background-color: #fff;
+  transition: transform 0.2s;
+}
+.specialist-cart:hover {
+  transform: scale(1.05);
 }
 .specialist-cart__photo {
   position: absolute;

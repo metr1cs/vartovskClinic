@@ -12,6 +12,12 @@
         border: 3px solid #EFEFEF;
         border-radius: 30px;
         background-color: #fff;
+        transition: transform 0.2s;
+
+        &:hover{
+            transform: scale(1.05);
+
+        }
 
         &__photo {
             position: absolute;
