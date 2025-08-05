@@ -5,7 +5,7 @@ function directionViewMain(){
         Direction.addEventListener("click", function (e) {
             idDirection = Direction.dataset.direction;
             localStorage.setItem('idDirectionValue', idDirection);
-            window.location.href = "/doctors.html";
+            window.location.href = "./doctors.html";
         })
     }
 }
