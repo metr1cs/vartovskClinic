@@ -643,15 +643,18 @@
 .hospital-box__left {
   display: grid;
   grid-template-columns: repeat(2, 189px);
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   row-gap: 64px;
 }
 .hospital-box__right-image {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: right center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right center;
+     object-position: right center;
 }
 .hospital-middle {
   margin-top: 50px;
@@ -799,7 +802,8 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   row-gap: 124px;
   justify-content: space-between;
 }
@@ -1155,6 +1159,7 @@
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .main-right__bottom {
@@ -1353,7 +1358,8 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, 189px);
-  column-gap: 52px;
+  -moz-column-gap: 52px;
+       column-gap: 52px;
   row-gap: 117px;
   padding: 100px 69px 76px 58px;
   background-color: rgba(220, 220, 220, 0.74);
@@ -1739,7 +1745,8 @@
 .specialist-cart__photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .specialist-cart__name {
   color: #3F3F3F;
@@ -1957,6 +1964,7 @@
   color: #3F3F3F;
   background-color: #E8E8E8;
   border-radius: 30px;
+  width: -moz-fit-content;
   width: fit-content;
   height: 18px;
 }
@@ -2248,6 +2256,7 @@
   line-height: 11px;
   font-weight: 700;
   color: #727272;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .footer-center {
@@ -2412,6 +2421,10 @@
   font-weight: 700;
   line-height: 20px;
   padding: 9px 28px 9px 62px;
+}
+.tab__search::-moz-placeholder {
+  text-transform: uppercase;
+  color: rgb(232, 232, 232);
 }
 .tab__search::placeholder {
   text-transform: uppercase;
@@ -2674,7 +2687,8 @@ a {
 }
 
 .y > img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* Сохраняем пропорции изображения */
   height: auto;
   /* Высота должна меняться автоматически */
@@ -2699,8 +2713,8 @@ a {
 .rr {
   position: relative;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: -moz-fit-content;
   height: fit-content;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
