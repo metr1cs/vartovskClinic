@@ -643,18 +643,15 @@
 .hospital-box__left {
   display: grid;
   grid-template-columns: repeat(2, 189px);
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   row-gap: 64px;
 }
 .hospital-box__right-image {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: right center;
-     object-position: right center;
+  object-fit: contain;
+  object-position: right center;
 }
 .hospital-middle {
   margin-top: 50px;
@@ -802,8 +799,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   row-gap: 124px;
   justify-content: space-between;
 }
@@ -1159,7 +1155,6 @@
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .main-right__bottom {
@@ -1358,8 +1353,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, 189px);
-  -moz-column-gap: 52px;
-       column-gap: 52px;
+  column-gap: 52px;
   row-gap: 117px;
   padding: 100px 69px 76px 58px;
   background-color: rgba(220, 220, 220, 0.74);
@@ -1745,8 +1739,7 @@
 .specialist-cart__photo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .specialist-cart__name {
   color: #3F3F3F;
@@ -1964,7 +1957,6 @@
   color: #3F3F3F;
   background-color: #E8E8E8;
   border-radius: 30px;
-  width: -moz-fit-content;
   width: fit-content;
   height: 18px;
 }
@@ -2256,7 +2248,6 @@
   line-height: 11px;
   font-weight: 700;
   color: #727272;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .footer-center {
@@ -2422,10 +2413,6 @@
   line-height: 20px;
   padding: 9px 28px 9px 62px;
 }
-.tab__search::-moz-placeholder {
-  text-transform: uppercase;
-  color: rgb(232, 232, 232);
-}
 .tab__search::placeholder {
   text-transform: uppercase;
   color: rgb(232, 232, 232);
@@ -2501,6 +2488,240 @@
   margin-top: 200px;
 }
 
+/* LICENSE STYLES */
+.license {
+  padding: 40px 0;
+  background: #f8f9fa;
+}
+
+.license-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.license-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Сетка лицензий - 4 в ряд */
+.license-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-content: center;
+}
+
+.license-item {
+  width: 100%;
+  height: 0;
+  padding-bottom: 136.8%; /* Соотношение 307/420 = 0.731 */
+  position: relative;
+}
+
+.license-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.license-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.license-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #e0e0e0;
+}
+
+.license-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(117, 110, 110, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.license-card:hover .license-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.license-btn {
+  background: white;
+  color: #2c3e50;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.license-btn:hover {
+  background: #f1f3f5;
+  transform: scale(1.05);
+}
+
+.license-icon {
+  font-size: 16px;
+}
+
+/* Модальное окно */
+.license-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+}
+
+.license-modal.active {
+  display: flex;
+}
+
+.license-modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.license-modal-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.license-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.license-close:hover {
+  color: #ff4757;
+}
+
+/* Адаптивность для больших экранов */
+@media (max-width: 1440px) {
+  .license-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+/* Адаптивность для ноутбуков */
+@media (max-width: 1200px) {
+  .license-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .license-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
+/* Адаптивность для планшетов (768px) */
+@media (max-width: 900px) {
+  .license-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .license-container {
+    padding: 0 15px;
+  }
+  .license-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+}
+/* Адаптивность для мобильных (480px) */
+@media (max-width: 600px) {
+  .license-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .license-container {
+    padding: 0 12px;
+  }
+  .license-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .license-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .license-icon {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .license-grid {
+    gap: 16px;
+  }
+  .license-container {
+    padding: 0 10px;
+  }
+  .license-title {
+    font-size: 1.4rem;
+  }
+  .license-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+/* Для очень маленьких экранов */
+@media (max-width: 360px) {
+  .license-grid {
+    max-width: 300px;
+  }
+  .license-title {
+    font-size: 1.2rem;
+  }
+  .license-btn {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -2687,8 +2908,7 @@ a {
 }
 
 .y > img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* Сохраняем пропорции изображения */
   height: auto;
   /* Высота должна меняться автоматически */
@@ -2713,8 +2933,8 @@ a {
 .rr {
   position: relative;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: -moz-fit-content;
+  object-fit: cover;
   height: fit-content;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
