@@ -1489,13 +1489,13 @@
   text-transform: uppercase;
   font-size: clamp(16px, 4vw, 24px);
   font-weight: 700;
-  color: rgb(63, 63, 63);
+  color: rgba(255, 255, 255, 0.95);
   line-height: normal;
 }
 .add-front__text {
   font-size: clamp(12px, 3vw, 16px);
   font-weight: 400;
-  color: rgb(63, 63, 63);
+  color: rgba(255, 255, 255, 0.95);
   line-height: normal;
 }
 .add-front__buttons {
