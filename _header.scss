@@ -6,8 +6,8 @@
     padding-top: 54px;
 
     &-logo {
-        height: 50px;
-        margin-top: 15px;
+        height: 60px;
+        margin-top: 13px;
 
         &__textless {
             display: none;
@@ -155,12 +155,12 @@
             color: #3F3F3F;
             font-size: $fontSizeLittle;
             line-height: normal;
-            font-weight: 300;
+            font-weight: 500;
         }
 
         &__button {
             width: 200px;
-            border: 0px;
+            border: none;
             border-radius: 30px;
             background: #75CB4B;
             padding: 16px 18px;
@@ -177,120 +177,6 @@
         }
     }
 
-    // &-right {
-    //     display: grid;
-    //     gap: 10px;
-    //     grid-template:
-    //         "ban1 ban1" 306px
-    //         "ban2 ban3" 234px / 305px 305px;
-
-    //     &__banner {
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: flex-start;
-    //         justify-content: flex-end;
-    //         position: relative;
-    //         padding: 0 32px 30px 32px;
-
-    //         &-link {
-    //             position: absolute;
-    //             width: 100%;
-    //             height: 100%;
-    //             top: 0;
-    //             left: 0;
-    //         }
-
-    //         &--ban1 {
-    //             grid-area: ban1;
-    //             padding-bottom: 25px;
-    //         }
-
-    //         &--ban2 {
-    //             grid-area: ban2;
-    //         }
-
-    //         &--ban3 {
-    //             grid-area: ban3;
-    //         }
-
-    //         &-image {
-    //             position: absolute;
-    //             z-index: -5;
-    //             left: 0;
-    //             top: 0;
-    //             border-radius: 30px;
-
-    //             &--1 {
-    //                 position: relative;
-    //                 background-image: url(/image/banner1.png);
-    //             }
-
-    //             &--2 {
-    //                 position: relative;
-    //                 background-color: #CBCBCB;
-    //                 background-image: url(/image/dms.png);
-    //             }
-
-    //             &--3 {
-    //                 position: relative;
-    //                 background-color: #CBCBCB;
-    //                 background-image: url(/image/uzi.png);
-    //             }
-
-    //         }
-
-    //         &-tittle {
-    //             text-transform: uppercase;
-    //             font-size: 40px;
-    //             color: #FFFFFF;
-    //             font-weight: 700;
-    //             line-height: 48px;
-    //         }
-
-    //         // &-description {
-    //         //     font-size: 14px;
-    //         //     color: #FFFFFF;
-    //         //     font-weight: 300;
-    //         //     line-height: 15px;
-    //         //     margin-top: 18px;
-
-    //         //     &--span {
-    //         //         font-weight: 700;
-    //         //     }
-    //         // }
-
-    //         &-description {
-    //             font-size: 14px;
-    //             color: #FFFFFF;
-    //             font-weight: 300;
-    //             line-height: 15px;
-    //             margin-top: 18px;
-
-    //             &--span {
-    //                 font-weight: 700;
-    //             }
-    //         }
-
-    //         &-button {
-    //             text-transform: uppercase;
-    //             text-decoration: none;
-    //             background-color: rgb(208, 208, 208, 0.62);
-    //             color: #FFFFFF;
-    //             border-radius: 30px;
-    //             padding: 12px 44px;
-    //             font-size: 14px;
-    //             font-weight: 700;
-    //             height: 18px;
-    //             margin-bottom: 8px;
-    //         }
-
-    //         &-container {
-    //             display: flex;
-    //             align-items: flex-end;
-    //             gap: 12px;
-    //         }
-    //     }
-    // }
 
     &-right {
         display: flex;
@@ -376,6 +262,7 @@
                 color: #FFFFFF;
                 font-weight: 700;
                 line-height: normal;
+                white-space: nowrap;
             }
 
             &-description {
@@ -396,11 +283,40 @@
                 background-color: rgb(208, 208, 208, 0.62);
                 color: #FFFFFF;
                 border-radius: 30px;
-                padding: 12px 44px;
-                font-size: 14px;
+                font-size: 10px;
+                padding: 7px 12px ;
                 font-weight: 700;
-                height: 18px;
                 margin-bottom: 8px;
+                text-align: center;
+                white-space: nowrap;
+                @media (min-width: 375px) {
+                    font-size: 12px;
+                    padding: 7px 16px ;
+                }
+                @media (min-width: 425px) {
+                    font-size: 15px;
+                    padding: 7px 16px ;
+                }
+                @media (min-width: 576px) {
+                    font-size: 16px;
+                    padding: 7px 18px ;
+                    margin-top: 20px;
+                }
+                @media (min-width: 768px) {
+                    font-size: 16px;
+                    padding: 12px 28px ;
+                    //margin-top: 20px;
+                }
+                @media (min-width: 992px) {
+                    padding: 12px 37px;
+                    font-size: 14px;
+                    //margin-top: 50px;
+                }
+                @media (min-width: 1200px) {
+                }
+                @media (min-width: 1400px) {
+                }
+
             }
 
             &-container {
@@ -411,7 +327,19 @@
                 align-items: flex-end;
                 gap: 12px;
                 padding-right: 20px;
-
+                flex-direction: column;
+                width: 90%;
+                @media (min-width: 576px) {
+                }
+                @media (min-width: 768px) {
+                    //margin-bottom: 50px;
+                }
+                @media (min-width: 992px) {
+                }
+                @media (min-width: 1200px) {
+                }
+                @media (min-width: 1400px) {
+                }
                 &--mini {
                     flex-direction: column;
                     align-items: flex-start;
@@ -478,7 +406,7 @@
 
 @media (max-width: 768px) {
     .main-right__banner-button {
-        display: none;
+
     }
 
     .main-right__banner-description {
