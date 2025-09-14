@@ -1567,7 +1567,6 @@
   display: flex;
   flex-direction: column;
   gap: 19px;
-  background-color: rgb(117, 203, 75);
   border-radius: 30px;
   padding: 30px;
   margin-top: -30px;
@@ -1579,12 +1578,12 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  color: #75DB47;
-  background-color: #fff;
+  color: #FFFFFF;
   width: 100%;
   border-radius: 30px;
   padding: 12px 50px;
   text-align: center;
+  background-color: #75CB4B;
 }
 .last-back {
   position: absolute;
