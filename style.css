@@ -90,6 +90,7 @@
   color: #75CB4B;
   font-weight: 700;
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .sale {
@@ -1098,6 +1099,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
+  white-space: nowrap;
 }
 .navigate-button__block-link--low {
   text-transform: lowercase;
@@ -1809,6 +1811,7 @@
   display: flex;
   width: 385px;
   justify-content: space-between;
+  gap: 25px;
 }
 .specialist-cart__bottons-details {
   width: 172px;
@@ -2402,6 +2405,7 @@
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   gap: 20px;
+  align-items: center;
 }
 .tab-menu__title {
   text-transform: uppercase;
@@ -2413,8 +2417,8 @@
 
 .tab {
   display: flex;
-  justify-content: space-between;
-  gap: 27px;
+  gap: 7px;
+  flex-wrap: wrap;
 }
 .tab__label {
   height: 20px;
@@ -2508,10 +2512,6 @@
 }
 
 @media (max-width: 768px) {
-  .tab {
-    flex-direction: column;
-    gap: 15px;
-  }
   .tab-menu {
     align-items: flex-start;
     margin-bottom: 10px;

@@ -3,6 +3,7 @@
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   gap: 20px;
+  align-items: center;
 
   &__title {
     text-transform: uppercase;
@@ -15,9 +16,27 @@
 
 .tab {
   display: flex;
-  justify-content: space-between;
-  gap: 27px;
+  gap: 7px;
+  flex-wrap: wrap;
 
+  @media (min-width: 375px) {
+  }
+  @media (min-width: 425px) {
+
+  }
+  @media (min-width: 576px) {
+
+  }
+  @media (min-width: 768px) {
+
+  }
+  @media (min-width: 992px) {
+
+  }
+  @media (min-width: 1200px) {
+  }
+  @media (min-width: 1400px) {
+  }
   &__label {
     height: 20px;
     text-transform: uppercase;
@@ -115,10 +134,7 @@
 }
 
 @media (max-width: 768px) {
-  .tab {
-    flex-direction: column;
-    gap: 15px;
-  }
+
 
   .tab-menu {
     align-items: flex-start;
