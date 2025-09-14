@@ -1283,7 +1283,7 @@
   bottom: 20px;
   left: 30px;
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   gap: 12px;
   padding-right: 20px;
   flex-direction: column;
@@ -1522,13 +1522,13 @@
   text-transform: uppercase;
   font-size: clamp(16px, 4vw, 24px);
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgb(63, 63, 63);
   line-height: normal;
 }
 .add-front__text {
   font-size: clamp(12px, 3vw, 16px);
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgb(63, 63, 63);
   line-height: normal;
 }
 .add-front__buttons {
@@ -1841,7 +1841,7 @@
 .specialist-cart__bottons-signup {
   text-decoration: none;
   background-color: #75CB4B;
-  padding: 12px 37px;
+  padding: 12px;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
@@ -1850,6 +1850,7 @@
   border: none;
   white-space: nowrap;
   transition: all 0.2s ease;
+  width: 190px;
 }
 .specialist-cart__bottons-signup:hover {
   transform: scale(1.06);
