@@ -12,6 +12,47 @@
 </head>
 
 <body>
+<!-- ЗАЯВКА -->
+<section class="application">
+    <div class="application-center">
+        <form id="callbackForm" class="form">
+            <div class="form-top">
+                <h1 class="form-top__title">Заказать обратный звонок</h1>
+                <p class="form-top__text">Заполните форму и наш администратор свяжется с вами</p>
+            </div>
+            <div class="form-inputs">
+                <input name="name" class="form-inputs__item" type="text" placeholder="Ваше имя" required>
+                <input name="phone" class="form-inputs__item" type="text" placeholder="+7 (999) 555-55-55" required>
+                <input name="service" class="form-inputs__item" type="text" placeholder="Какой нужен врач/услуга" required>
+                <button type="submit" class="form-inputs__button">Отправить данные</button>
+            </div>
+            <div class="form-checkbox">
+                <input class="form-checkbox__marker" type="checkbox" id="personal-data" name="agree" required>
+                <label class="form-checkbox__label" for="personal-data">
+                    Соглашаюсь на <a href="./privacy-policy.html">обработку персональных данных</a>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="complate">
+        <div class="complate-image">
+            <svg width="72.792969" height="54.621094" viewBox="0 0 72.793 54.6211" fill="none"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Слияние"
+                      d="M31.1758 45.957L67.4609 1.11328C68.5039 -0.175781 70.3945 -0.375 71.6836 0.667969C72.9688 1.71094 73.168 3.59766 72.125 4.88672L32.7852 53.5078C31.9492 54.543 30.5703 54.875 29.3906 54.4258C28.9883 54.3242 28.6016 54.1367 28.2539 53.8594L1.125 32.0977C-0.167969 31.0625 -0.375 29.1719 0.660156 27.8828C1.69531 26.5898 3.58594 26.3828 4.87891 27.418L28.3711 46.2617C29.2305 46.9492 30.4844 46.8164 31.1758 45.957Z"
+                      clip-rule="evenodd" fill="#75DB47" fill-opacity="1.000000" fill-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="complate-box">
+            <h1 class="complate-box__title">Ваша заявка принята</h1>
+            <p class="complate-box__phrase">Спасибо! Скоро свяжемся с Вами!</p>
+        </div>
+    </div>
+</section>
     <!-- HEADER -->
     <section class="center">
         <header class="header bufer">
@@ -144,10 +185,10 @@
             </a>
             <div class="footer-media">
                 <div class="footer-left">
-                    <a class="footer-left__link" href="#">О КЛИНИКЕ</a>
-                    <a class="footer-left__link" href="/service.html">УСЛУГИ</a>
-                    <a class="footer-left__link" href="/doctors.html">ВРАЧИ</a>
-                    <a class="footer-left__link" href="/contacts.html">КОНТАКТЫ</a>
+                    <a class="footer-left__link" href="./aboutClinic.html">О КЛИНИКЕ</a>
+                    <a class="footer-left__link" href="./service.html">УСЛУГИ</a>
+                    <a class="footer-left__link" href="./doctors.html">ВРАЧИ</a>
+                    <a class="footer-left__link" href="./contacts.html">КОНТАКТЫ</a>
                 </div>
                 <div class="footer-center">
                     <div class="footer-center__email">
@@ -182,6 +223,12 @@
     <!-- JS -->
     <script src="/tabService.js"></script>
     <script src="send_request.js"></script>
+
+    <script src="./privacy_policy.js"></script>
+    <script src="./re.js"></script>
+    <script src="./directionsMain.js"></script>
+<!--    <script src="./tabService.js"></script>-->
+<!--    <script src="./send_request.js"></script>-->
 </body>
 
 </html>
