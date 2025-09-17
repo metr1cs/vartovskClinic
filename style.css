@@ -1843,7 +1843,6 @@
 .specialist-cart__bottons-signup {
   text-decoration: none;
   background-color: #75CB4B;
-  padding: 12px;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
@@ -1852,7 +1851,7 @@
   border: none;
   white-space: nowrap;
   transition: all 0.2s ease;
-  width: 190px;
+  padding: 12px 25px;
 }
 .specialist-cart__bottons-signup:hover {
   transform: scale(1.06);

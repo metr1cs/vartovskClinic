@@ -113,7 +113,7 @@
             &-signup {
                 text-decoration: none;
                 background-color: #75CB4B;
-                padding: 12px;
+                //padding: 12px;
                 color: #FFFFFF;
                 font-size: 14px;
                 font-weight: 700;
@@ -122,7 +122,8 @@
                 border: none;
                 white-space: nowrap;
                 transition: all 0.2s ease;
-                width: 190px;
+                padding: 12px 25px;
+                //width: 190px;
                 &:hover{
                     transform: scale(1.06);
                 }
@@ -191,7 +192,10 @@
         height: auto;
         padding: 82px 30px 30px 30px;
     }
-
+//.specialist-cart__bottons-signup{
+//    width: 140px;
+//
+//}
     .specialist-cart__name {
         font-size: 16px;
     }
